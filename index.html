@@ -36,7 +36,6 @@
   a:hover{color:var(--forus-vivid-crimson); text-decoration:underline;}
   .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
 
-  /* --- SELECTOR DE IDIOMA --- */
   .lang-selector{
     max-width:var(--maxw);
     margin:0 auto 16px;
@@ -68,7 +67,6 @@
     color:#fff;
   }
 
-  /* --- LOGO BANNER --- */
   .logo-banner{
     max-width:var(--maxw);
     margin:0 auto 16px;
@@ -103,7 +101,6 @@
     letter-spacing:0.3px;
   }
 
-  /* --- NAVEGACIÓN --- */
   .toolkit-nav{
     max-width:var(--maxw);
     margin:0 auto 24px;
@@ -143,7 +140,6 @@
     background:rgba(255,255,255,0.18);
   }
 
-  /* --- PÁGINAS (ventanas) --- */
   .page-window{
     display:none;
     background:#ffffff;
@@ -190,7 +186,6 @@
     to{opacity:1; transform:translateY(0);}
   }
 
-  /* --- HERO --- */
   .hero{
     background:linear-gradient(145deg, var(--forus-dark-azure) 0%, #015a69 60%, var(--forus-teal) 130%);
     color:#fff;
@@ -332,7 +327,6 @@
     color:#fff;
   }
 
-  /* --- TIPOGRAFÍA --- */
   .eyebrow{
     text-transform:uppercase;
     letter-spacing:1.5px;
@@ -357,7 +351,6 @@
     line-height:1.7;
   }
 
-  /* --- CARDS --- */
   .card-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:20px;}
   .card{
     background:var(--forus-light);
@@ -375,7 +368,6 @@
   .card h3{margin-top:0; font-size:17px; color:var(--forus-dark-azure);}
   .card p{font-size:14px; color:var(--forus-gray); margin-bottom:0;}
 
-  /* --- REPORT BOX --- */
   .report-box{
     background:linear-gradient(145deg, var(--forus-dark-azure) 0%, #01606e 100%);
     color:#fff;
@@ -389,7 +381,6 @@
   .report-box p{color:#DCEDF7; font-size:14.5px; opacity:0.95;}
   .report-actions{margin-top:18px; display:flex; gap:14px; flex-wrap:wrap;}
 
-  /* --- POSTS --- */
   .post-section-title{
     font-size:20px;
     font-weight:800;
@@ -501,7 +492,6 @@
     text-decoration:none;
   }
 
-  /* --- PODCASTS --- */
   .podcast-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:20px;}
   .podcast-card{
     background:var(--forus-light);
@@ -583,7 +573,6 @@
     color:var(--forus-dark-azure);
   }
 
-  /* --- HASHTAGS --- */
   .hashtag-block{margin-top:20px;}
   .hashtag-block h4{margin-bottom:8px; font-size:14px; color:var(--forus-dark-azure);}
   .tags{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px;}
@@ -604,7 +593,6 @@
     cursor:default;
   }
 
-  /* --- CUENTAS --- */
   .account-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:18px;}
   .account-card{
     text-align:center;
@@ -635,6 +623,62 @@
   .account-card h5{margin:0 0 3px; font-size:13px;}
   .account-card span{font-size:11.5px; color:var(--forus-gray);}
 
+  /* Member cards */
+  .member-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:18px;}
+  .member-card{
+    background:var(--forus-light);
+    border:1px solid var(--forus-border);
+    border-radius:var(--radius);
+    padding:18px 20px;
+    transition:all 0.25s;
+    border-top:4px solid var(--forus-teal);
+  }
+  .member-card:hover{
+    border-color:var(--forus-teal);
+    box-shadow:0 4px 16px rgba(88,196,198,0.10);
+  }
+  .member-card .member-header{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:8px;
+    flex-wrap:wrap;
+  }
+  .member-card .member-header .flag{font-size:28px;}
+  .member-card .member-header .name{font-weight:700; font-size:16px; color:var(--forus-dark-azure);}
+  .member-card .member-header .country{font-size:13px; color:var(--forus-gray);}
+  .member-card .member-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    margin-top:6px;
+  }
+  .member-card .member-links a{
+    font-size:11px;
+    background:#fff;
+    padding:3px 10px;
+    border-radius:12px;
+    border:1px solid var(--forus-border);
+    color:var(--forus-gray);
+    text-decoration:none;
+    transition:all 0.2s;
+  }
+  .member-card .member-links a:hover{
+    background:var(--forus-dark-azure);
+    color:#fff;
+    border-color:var(--forus-dark-azure);
+  }
+  .member-card .member-links .fb{color:#1877f2; border-color:#1877f2;}
+  .member-card .member-links .fb:hover{background:#1877f2; color:#fff;}
+  .member-card .member-links .tw{color:#000; border-color:#000;}
+  .member-card .member-links .tw:hover{background:#000; color:#fff;}
+  .member-card .member-links .ig{color:#e4405f; border-color:#e4405f;}
+  .member-card .member-links .ig:hover{background:#e4405f; color:#fff;}
+  .member-card .member-links .li{color:#0a66c2; border-color:#0a66c2;}
+  .member-card .member-links .li:hover{background:#0a66c2; color:#fff;}
+  .member-card .member-links .web{color:var(--forus-teal); border-color:var(--forus-teal);}
+  .member-card .member-links .web:hover{background:var(--forus-teal); color:#fff;}
+
   .source-note{
     margin-top:22px;
     font-size:11.5px;
@@ -655,9 +699,8 @@
     font-weight:500;
   }
 
-  /* --- RESPONSIVE --- */
   @media (max-width:768px){
-    .card-grid, .msg-grid, .podcast-grid{grid-template-columns:1fr;}
+    .card-grid, .msg-grid, .podcast-grid, .member-grid{grid-template-columns:1fr;}
     .account-grid{grid-template-columns:1fr 1fr;}
     .hero h1{font-size:24px;}
     .hero h2{font-size:16px;}
@@ -690,7 +733,6 @@
     .cta-row .btn{font-size:10px; padding:6px 12px;}
   }
 
-  /* --- OCULTAR IDIOMAS --- */
   .lang-content{display:none;}
   .lang-content.active{display:block;}
 </style>
@@ -716,7 +758,7 @@
 <!-- NAVEGACIÓN -->
 <nav class="toolkit-nav" id="mainNav">
   <button class="active" data-page="page-inicio" data-es="Inicio" data-en="Home" data-fr="Accueil">Inicio</button>
-  <button data-page="page-posts" data-es="Publicaciones" data-en="Social Media Posts" data-fr="Publications">Publicaciones</button>
+  <button data-page="page-posts" data-es="Post en redes sociales" data-en="Social Media Posts" data-fr="Post sur les réseaux sociaux">Publicaciones</button>
   <button data-page="page-podcasts" data-es="Podcasts" data-en="Podcasts" data-fr="Podcasts">Podcasts</button>
   <button data-page="page-reporte" data-es="Reportes" data-en="Reports" data-fr="Rapports">Reportes</button>
   <button data-page="page-hashtags" data-es="Hashtags" data-en="Hashtags" data-fr="Hashtags">Hashtags</button>
@@ -755,7 +797,6 @@
     <h2 class="section-title">Publicaciones para redes sociales</h2>
     <p class="lead">Contenido listo para usar o adaptar en cualquier red social.</p>
 
-    <!-- Visuals Box -->
     <div class="visuals-box">
       <span class="icon">🖼️</span>
       <div class="text">
@@ -765,7 +806,6 @@
       <a href="https://canva.link/8piex4qo19y0on7" target="_blank" class="btn-link">🔗 Descargar visuales</a>
     </div>
 
-    <!-- Jueves 2 julio -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Intro HLPF</span><span class="post-date">Jueves 2 julio 2026</span></div>
       <div class="post-body">
@@ -785,7 +825,6 @@ Desde los Exámenes Nacionales Voluntarios (ENV) hasta la construcción de la ag
       </div>
     </div>
 
-    <!-- Viernes 3 julio -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Anuncio del reporte</span><span class="post-date">Viernes 3 julio 2026</span></div>
       <div class="post-body">
@@ -809,7 +848,6 @@ El informe presenta lecciones prácticas sobre el intercambio entre pares, el ap
       </div>
     </div>
 
-    <!-- Lunes 7 julio -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Webinar lanzamiento</span><span class="post-date">Lunes 7 julio 2026</span></div>
       <div class="post-body">
@@ -828,7 +866,6 @@ https://www.forus-international.org/en/extra/hub/resources-publications?modal_pa
       </div>
     </div>
 
-    <!-- Martes 8 julio -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">VNRs y plataformas</span><span class="post-date">Martes 8 julio 2026</span></div>
       <div class="post-body">
@@ -849,7 +886,6 @@ https://www.forus-international.org/en/agenda-2030
       </div>
     </div>
 
-    <!-- Jueves 9 julio - Beyond the Review -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Beyond the Review</span><span class="post-date">Jueves 9 julio 2026</span></div>
       <div class="post-body">
@@ -870,7 +906,6 @@ https://www.forus-international.org/en/a-space-for-us
       </div>
     </div>
 
-    <!-- Jueves 9 julio - EUSEE -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">EUSEE</span><span class="post-date">Jueves 9 julio 2026</span></div>
       <div class="post-body">
@@ -889,7 +924,6 @@ https://www.forus-international.org/en/agenda-2030
       </div>
     </div>
 
-    <!-- Martes 14 julio - African Agency -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">African Agency</span><span class="post-date">Martes 14 julio 2026 | 13:15–14:45 EST</span></div>
       <div class="post-body">
@@ -906,7 +940,6 @@ https://www.forus-international.org/en/agenda-2030
       </div>
     </div>
 
-    <!-- Martes 14 julio - Local2030 -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Local2030 Coalition</span><span class="post-date">Martes 14 julio 2026 | 15:00–18:00 EDT</span></div>
       <div class="post-body">
@@ -925,7 +958,6 @@ Organiza: Coalición Local2030 – Grupo de Trabajo 1
       </div>
     </div>
 
-    <!-- Jueves 16 julio - Post-2030 -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Post-2030 Vision</span><span class="post-date">Jueves 16 julio 2026 | 📸 Galería de fotos</span></div>
       <div class="post-body">
@@ -952,7 +984,6 @@ https://www.forus-international.org/en/campaigns?modal_page=campaign&modal_detai
       </div>
     </div>
 
-    <!-- 19 julio - Recap final -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Recapitulación final</span><span class="post-date">19 julio 2026 | 📸 Galería de fotos</span></div>
       <div class="post-body">
@@ -984,7 +1015,6 @@ Desde los Exámenes Nacionales Voluntarios (ENV) y el seguimiento de un entorno 
     <p class="lead">Como complemento al reporte, Forus presenta una serie de episodios del podcast "Beyond the Review" con voces de la red sobre la implementación de los ODS y la participación de la sociedad civil.</p>
 
     <div class="podcast-grid">
-      <!-- Episodio 1 - Noruega -->
       <div class="podcast-card">
         <div class="podcast-icon">
           <span class="num">1</span>
@@ -997,7 +1027,6 @@ Desde los Exámenes Nacionales Voluntarios (ENV) y el seguimiento de un entorno 
         <a href="https://soundcloud.com/user-975127425/beyond-the-review" target="_blank" class="podcast-link">🎧 Escuchar en SoundCloud →</a>
       </div>
 
-      <!-- Episodio 2 - Estonia -->
       <div class="podcast-card">
         <div class="podcast-icon">
           <span class="num">2</span>
@@ -1010,7 +1039,6 @@ Desde los Exámenes Nacionales Voluntarios (ENV) y el seguimiento de un entorno 
         <a href="https://soundcloud.com/user-975127425/beyond-the-review-lessons-from" target="_blank" class="podcast-link">🎧 Escuchar en SoundCloud →</a>
       </div>
 
-      <!-- Episodio 3 - Brasil -->
       <div class="podcast-card">
         <div class="podcast-icon">
           <span class="num">3</span>
@@ -1067,7 +1095,6 @@ Desde los Exámenes Nacionales Voluntarios (ENV) y el seguimiento de un entorno 
       </div>
     </div>
 
-    <!-- Post-2030 Report -->
     <div style="margin-top:36px; border-top:2px solid var(--forus-border); padding-top:28px;">
       <p class="eyebrow">Visión Post-2030</p>
       <h2 class="section-title">Forus Post-2030 Vision</h2>
@@ -1163,39 +1190,94 @@ Desde los Exámenes Nacionales Voluntarios (ENV) y el seguimiento de un entorno 
     <h4 style="margin:24px 0 10px; color:var(--forus-dark-azure);">Organizaciones socias</h4>
     <div class="account-grid">
       <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">AF</div><h5>AFD</h5><span>@AFD_France</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">EC</div><h5>European Commission</h5><span>@EU_Commission</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">OX</div><h5>Oxfam</h5><span>@Oxfam</span></div>
       <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">FF</div><h5>Fondation de France</h5><span>@Fondationfrance</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">OX</div><h5>Oxfam Hong Kong</h5><span>@oxfamhongkong</span></div>
       <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">GM</div><h5>Govt. Monaco</h5><span>@GvtMonaco</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">EU</div><h5>EU at UN</h5><span>@EUatUN</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">HV</div><h5>Hivos</h5><span>@Hivos</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">AS</div><h5>Action for Sustainable Dev.</h5><span>@Action4SD</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">AD</div><h5>Asia Development Alliance</h5><span>@ADA2030</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">GC</div><h5>Global Call to Action</h5><span>@GCAP</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">TP</div><h5>TAP Network</h5><span>@TAPNetwork</span></div>
       <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">CV</div><h5>CIVICUS</h5><span>@CIVICUS</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">TI</div><h5>Transparency Intl</h5><span>@TransparIntl</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">OXN</div><h5>Oxfam Novib</h5><span>@OxfamNovib</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">L23</div><h5>Local2030</h5><span>@Local2030</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">UNH</div><h5>UN-Habitat</h5><span>@UN_Habitat</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">CW</div><h5>Coalition for the UN we Need</h5><span>@CoalitionUN</span></div>
     </div>
 
     <h4 style="margin:24px 0 10px; color:var(--forus-dark-azure);">Plataformas nacionales miembros</h4>
-    <div class="account-grid" style="grid-template-columns:repeat(5,1fr);">
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">CO</div><h5>CONGAD</h5><span>Senegal</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">PI</div><h5>PIANGO</h5><span>Pacífico</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">KC</div><h5>KCOC</h5><span>Corea del Sur</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">IN</div><h5>INFID</h5><span>Indonesia</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">JA</div><h5>JANIC</h5><span>Japón</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">FO</div><h5>ForUM</h5><span>Noruega</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">LA</div><h5>LAPAS</h5><span>Letonia</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">VA</div><h5>VANI</h5><span>India</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">TA</div><h5>TANGO</h5><span>Tanzania</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">CC</div><h5>CCOAIB</h5><span>Ruanda</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">CN</div><h5>CNONGD</h5><span>RD Congo</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">SP</div><h5>SPONG</h5><span>Burkina Faso</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">FO</div><h5>FONGDD</h5><span>Guinea</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">PL</div><h5>PLATONG</h5><span>Cabo Verde</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">KA</div><h5>KANGO</h5><span>Kiribati</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">CO</div><h5>CONGCOOP</h5><span>Guatemala</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">AS</div><h5>ASONOG</h5><span>Honduras</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">AB</div><h5>ABONG</h5><span>Brasil</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">TA</div><h5>Taiwan AID</h5><span>Taiwán</span></div>
+    <div class="member-grid">
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇷</span><span class="name">ABONG</span><span class="country">Brazil</span></div><div class="member-links"><a href="https://www.facebook.com/abong.osc" target="_blank" class="fb">Facebook</a><a href="https://x.com/abong_osc" target="_blank" class="tw">X</a><a href="https://www.instagram.com/abong_osc/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/abong/" target="_blank" class="li">LinkedIn</a><a href="https://abong.org.br/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇱</span><span class="name">ACCION</span><span class="country">Chile</span></div><div class="member-links"><a href="https://www.facebook.com/asociaciondeongs" target="_blank" class="fb">Facebook</a><a href="https://x.com/ACCIONdeONGs" target="_blank" class="tw">X</a><a href="https://www.instagram.com/accionag/" target="_blank" class="ig">Instagram</a><a href="#" class="web">accionag.cl</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌏</span><span class="name">ADA</span><span class="country">Asia</span></div><div class="member-links"><a href="https://www.facebook.com/ada2030/" target="_blank" class="fb">Facebook</a><a href="https://x.com/ada_2030" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/in/asiadevelopmentalliance/" target="_blank" class="li">LinkedIn</a><a href="https://ada2030.org/home/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇩🇴</span><span class="name">ALIANZA ONG</span><span class="country">Dominican Republic</span></div><div class="member-links"><a href="https://www.facebook.com/ONGalianza/D4" target="_blank" class="fb">Facebook</a><a href="https://x.com/AlianzaONG" target="_blank" class="tw">X</a><a href="https://www.instagram.com/alianzaongrd/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/alianza-ong/" target="_blank" class="li">LinkedIn</a><a href="https://alianzaong.org.do/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇵🇪</span><span class="name">ANC</span><span class="country">Peru</span></div><div class="member-links"><a href="https://www.facebook.com/ANCPERU" target="_blank" class="fb">Facebook</a><a href="https://x.com/ANCperu" target="_blank" class="tw">X</a><a href="https://www.anc.org.pe/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇺🇾</span><span class="name">ANONG</span><span class="country">Uruguay</span></div><div class="member-links"><a href="https://www.facebook.com/AnongUruguay" target="_blank" class="fb">Facebook</a><a href="https://x.com/AnongUruguay" target="_blank" class="tw">X</a><a href="https://www.instagram.com/anonguruguay/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/anong-asociaci%C3%B3n-nacional-de-ong-orientadas-al-desarrollo/" target="_blank" class="li">LinkedIn</a><a href="https://www.anong.org.uy/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇭🇳</span><span class="name">ASONOG</span><span class="country">Honduras</span></div><div class="member-links"><a href="https://www.facebook.com/ASONOG" target="_blank" class="fb">Facebook</a><a href="https://x.com/AsonogOficial" target="_blank" class="tw">X</a><a href="https://www.instagram.com/asonog_honduras/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/asonog/" target="_blank" class="li">LinkedIn</a><a href="https://asonog.hn/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇼</span><span class="name">BOCONGO</span><span class="country">Botswana</span></div><div class="member-links"><a href="https://www.facebook.com/bocongo" target="_blank" class="fb">Facebook</a><a href="https://x.com/BOCONGO2" target="_blank" class="tw">X</a><a href="https://www.instagram.com/_bocongo1_/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/in/botswana-council-of-ngos-1b6a5622a/" target="_blank" class="li">LinkedIn</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇬🇧</span><span class="name">BOND</span><span class="country">UK</span></div><div class="member-links"><a href="https://www.facebook.com/bond.org.uk" target="_blank" class="fb">Facebook</a><a href="https://x.com/bondngo" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/bond-uk/" target="_blank" class="li">LinkedIn</a><a href="https://www.bond.org.uk/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇳</span><span class="name">CANGO</span><span class="country">China</span></div><div class="member-links"><a href="https://www.cango.vip/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇰🇭</span><span class="name">CCC</span><span class="country">Cambodia</span></div><div class="member-links"><a href="https://www.facebook.com/CCCsince1990/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CCC_Cambodia" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/cooperation-committee-for-cambodia/" target="_blank" class="li">LinkedIn</a><a href="https://www.ccc-cambodia.org/kh" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇦</span><span class="name">Cooperation Canada</span><span class="country">Canada</span></div><div class="member-links"><a href="https://www.facebook.com/cooperationcanada" target="_blank" class="fb">Facebook</a><a href="https://x.com/cooperation_ca" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/cooperation-canada/" target="_blank" class="li">LinkedIn</a><a href="https://cooperation.ca/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇷🇼</span><span class="name">CCOAIB</span><span class="country">Rwanda</span></div><div class="member-links"><a href="https://www.facebook.com/ccoaib/" target="_blank" class="fb">Facebook</a><a href="https://x.com/ccoaib_rwanda" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/ccoaibrwanda/" target="_blank" class="li">LinkedIn</a><a href="https://ccoaib.rw/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇬</span><span class="name">CCOD</span><span class="country">Republic of the Congo</span></div><div class="member-links"><a href="https://www.facebook.com/pcpacongo.brazzaville/" target="_blank" class="fb">Facebook</a><a href="https://www.instagram.com/ccoaibr/" target="_blank" class="ig">Instagram</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇴</span><span class="name">CCONG</span><span class="country">Colombia</span></div><div class="member-links"><a href="https://www.facebook.com/confederacioncolombianadeong" target="_blank" class="fb">Facebook</a><a href="https://x.com/CCONGcolombia" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/in/ccong-confederaci%C3%B3n-colombiana-de-ong-b9173a58/" target="_blank" class="li">LinkedIn</a><a href="https://www.ccong.org.co/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇸🇨</span><span class="name">CEPS</span><span class="country">Seychelles</span></div><div class="member-links"><a href="https://www.facebook.com/CEPSseychelles" target="_blank" class="fb">Facebook</a><a href="https://www.ceps.sc/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇯</span><span class="name">CFRONG</span><span class="country">Benin</span></div><div class="member-links"></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇰</span><span class="name">CICSO</span><span class="country">Cook Islands</span></div><div class="member-links"><a href="https://www.facebook.com/CookIslandsSocietyOrganisations" target="_blank" class="fb">Facebook</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇳🇿</span><span class="name">CID</span><span class="country">New Zealand</span></div><div class="member-links"><a href="https://www.facebook.com/CouncilforInternationalDevelopment/" target="_blank" class="fb">Facebook</a><a href="https://x.com/cid_online" target="_blank" class="tw">X</a><a href="https://www.instagram.com/cid_nz/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/cid-nz/" target="_blank" class="li">LinkedIn</a><a href="https://www.cid.org.nz/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇹🇩</span><span class="name">CILONG</span><span class="country">Chad</span></div><div class="member-links"></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇫</span><span class="name">CIONGCA</span><span class="country">Central African Republic</span></div><div class="member-links"><a href="https://www.facebook.com/ciongca/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CIONGCA" target="_blank" class="tw">X</a><a href="http://www.ciongca.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇩</span><span class="name">CNONGD</span><span class="country">DR Congo</span></div><div class="member-links"><a href="https://www.facebook.com/CnongdRDC" target="_blank" class="fb">Facebook</a><a href="https://x.com/CnongdRdc" target="_blank" class="tw">X</a><a href="https://www.cnongdrdc.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇵🇭</span><span class="name">CODE-NGO</span><span class="country">Philippines</span></div><div class="member-links"><a href="https://www.facebook.com/caucusofdevelopmentngonetworks/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CODE_NGO" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/caucus-of-development-ngo-networks-inc-code-ngo/" target="_blank" class="li">LinkedIn</a><a href="https://code-ngo.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇪🇺</span><span class="name">CONCORD</span><span class="country">Europe</span></div><div class="member-links"><a href="https://www.facebook.com/CONCORDeurope/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CONCORD_Europe" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/concord-europe/" target="_blank" class="li">LinkedIn</a><a href="https://concordeurope.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇪</span><span class="name">CONCORD</span><span class="country">Belgium</span></div><div class="member-links"></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇸🇳</span><span class="name">CONGAD</span><span class="country">Senegal</span></div><div class="member-links"><a href="https://www.facebook.com/CONGAD.org/" target="_blank" class="fb">Facebook</a><a href="https://www.linkedin.com/in/congad-senegal-l-officiel-181408396/" target="_blank" class="li">LinkedIn</a><a href="https://www.congad.sn/carte/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇬🇹</span><span class="name">CONGCOOP</span><span class="country">Guatemala</span></div><div class="member-links"><a href="https://www.facebook.com/congcoop.coordinacion/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CONGCOOP" target="_blank" class="tw">X</a><a href="https://www.instagram.com/congcoop/" target="_blank" class="ig">Instagram</a><a href="https://www.congcoop.org.gt/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇪🇸</span><span class="name">COORDINADORA ONGD</span><span class="country">Spain</span></div><div class="member-links"><a href="https://www.facebook.com/coordinadoradeongd.espana/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CoordiONGD" target="_blank" class="tw">X</a><a href="https://www.instagram.com/coordiongd/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/coordinadora-de-organizaciones-para-el-desarrollo/" target="_blank" class="li">LinkedIn</a><a href="https://coordinadoraongd.org/coordinadora/english/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇫🇷</span><span class="name">COORDINATION SUD</span><span class="country">France</span></div><div class="member-links"><a href="https://www.facebook.com/Coordination-SUD-270517446303/" target="_blank" class="fb">Facebook</a><a href="https://x.com/coordinationsud" target="_blank" class="tw">X</a><a href="https://www.instagram.com/coordinationsud/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/coordinationsud/" target="_blank" class="li">LinkedIn</a><a href="https://www.coordinationsud.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇮</span><span class="name">CSCI</span><span class="country">Ivory Coast</span></div><div class="member-links"><a href="https://www.facebook.com/societecivile225/" target="_blank" class="fb">Facebook</a><a href="https://www.linkedin.com/in/csci-convention-de-la-soci%C3%A9t%C3%A9-civile-ivoirienne-5b27121a0/" target="_blank" class="li">LinkedIn</a><a href="http://fr.csci.group/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇮🇪</span><span class="name">DOCHAS</span><span class="country">Ireland</span></div><div class="member-links"><a href="https://www.facebook.com/dochasnetwork/" target="_blank" class="fb">Facebook</a><a href="https://x.com/Dochasnetwork" target="_blank" class="tw">X</a><a href="https://www.instagram.com/dochasnetwork/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/dochasnetwork/" target="_blank" class="li">LinkedIn</a><a href="https://dochas.ie/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇦🇷</span><span class="name">EENGD</span><span class="country">Argentina</span></div><div class="member-links"><a href="https://www.facebook.com/encuentrodeongs/" target="_blank" class="fb">Facebook</a><a href="https://x.com/red_eengd" target="_blank" class="tw">X</a><a href="https://www.instagram.com/red.encuentro/" target="_blank" class="ig">Instagram</a><a href="https://www.redencuentro.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇦</span><span class="name">Espace Associatif</span><span class="country">Morocco</span></div><div class="member-links"><a href="https://www.facebook.com/Espace.Associatif.ma/" target="_blank" class="fb">Facebook</a><a href="https://x.com/espassociatif" target="_blank" class="tw">X</a><a href="https://www.espace-associatif.ma/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇫🇯</span><span class="name">FCOSS</span><span class="country">Fiji</span></div><div class="member-links"><a href="https://www.facebook.com/FijiCOSS/" target="_blank" class="fb">Facebook</a><a href="https://x.com/FijiCouncil" target="_blank" class="tw">X</a><a href="https://www.instagram.com/fcoss22/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/fiji-council-of-social-services/" target="_blank" class="li">LinkedIn</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇱</span><span class="name">FECONG</span><span class="country">Mali</span></div><div class="member-links"><a href="https://www.facebook.com/FecongMali/" target="_blank" class="fb">Facebook</a><a href="https://x.com/FecongMali" target="_blank" class="tw">X</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇫🇮</span><span class="name">FINGO</span><span class="country">Finland</span></div><div class="member-links"><a href="https://www.facebook.com/FingoFi/" target="_blank" class="fb">Facebook</a><a href="https://x.com/FingoFi" target="_blank" class="tw">X</a><a href="https://www.instagram.com/fingofi/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/fingo-fi" target="_blank" class="li">LinkedIn</a><a href="https://fingo.fi/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇷🇴</span><span class="name">FOND</span><span class="country">Romania</span></div><div class="member-links"><a href="https://www.facebook.com/FONDRomania/" target="_blank" class="fb">Facebook</a><a href="https://x.com/FONDRomania" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/fond-romania/" target="_blank" class="li">LinkedIn</a><a href="https://www.fondromania.org/en/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇦🇴</span><span class="name">FONGA</span><span class="country">Angola</span></div><div class="member-links"><a href="https://www.facebook.com/plateformeFONGA" target="_blank" class="fb">Facebook</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇬🇳</span><span class="name">FONGDD</span><span class="country">Guinea</span></div><div class="member-links"></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇸🇹</span><span class="name">FONG-STP</span><span class="country">Sao Tome and Principe</span></div><div class="member-links"><a href="https://www.facebook.com/Federa%C3%A7%C3%A3o-das-ONGs-em-S%C3%A3o-Tom%C3%A9-e-Pr%C3%ADncipe-249383918425584/" target="_blank" class="fb">Facebook</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇹🇬</span><span class="name">FONGTO</span><span class="country">Togo</span></div><div class="member-links"><a href="https://www.facebook.com/Fongtofficiel/" target="_blank" class="fb">Facebook</a><a href="https://x.com/FongtoOfficiel" target="_blank" class="tw">X</a><a href="https://www.instagram.com/fongto.officiel/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/in/federation-des-ong-au-togo-618b43257/" target="_blank" class="li">LinkedIn</a><a href="https://fongto.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇿</span><span class="name">FORS</span><span class="country">Czech Republic</span></div><div class="member-links"><a href="https://www.facebook.com/FoRSPraha/" target="_blank" class="fb">Facebook</a><a href="https://x.com/fors_cz" target="_blank" class="tw">X</a><a href="https://www.instagram.com/fors_cz/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/fors_3" target="_blank" class="li">LinkedIn</a><a href="https://fors.cz/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇩🇰</span><span class="name">Globalt Fokus</span><span class="country">Denmark</span></div><div class="member-links"><a href="https://www.facebook.com/globaltfokusngo/about/" target="_blank" class="fb">Facebook</a><a href="https://x.com/globaltfokus" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/globalt-fokus/" target="_blank" class="li">LinkedIn</a><a href="https://globaltfokus.dk/da/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇭🇺</span><span class="name">HAND</span><span class="country">Hungary</span></div><div class="member-links"><a href="https://x.com/HANDdevelopment" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/handassociation" target="_blank" class="li">LinkedIn</a><a href="https://hand.org.hu/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇮🇩</span><span class="name">INFID</span><span class="country">Indonesia</span></div><div class="member-links"><a href="https://www.facebook.com/infid/" target="_blank" class="fb">Facebook</a><a href="https://x.com/infid_ID" target="_blank" class="tw">X</a><a href="https://www.instagram.com/infid_id/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/infid/" target="_blank" class="li">LinkedIn</a><a href="https://www.infid.org/en" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇺🇸</span><span class="name">INTERACTION</span><span class="country">United States</span></div><div class="member-links"><a href="https://www.facebook.com/InterActionOrg/" target="_blank" class="fb">Facebook</a><a href="https://x.com/interactionorg" target="_blank" class="tw">X</a><a href="https://www.instagram.com/interaction/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/interaction/" target="_blank" class="li">LinkedIn</a><a href="https://www.interaction.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇯🇵</span><span class="name">JANIC</span><span class="country">Japan</span></div><div class="member-links"><a href="https://www.facebook.com/janic.org/" target="_blank" class="fb">Facebook</a><a href="https://x.com/ngo_janic" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/janic-ngo" target="_blank" class="li">LinkedIn</a><a href="https://www.janic.org/en/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇿</span><span class="name">JOINT</span><span class="country">Mozambique</span></div><div class="member-links"><a href="https://www.facebook.com/joint.mz/" target="_blank" class="fb">Facebook</a><a href="https://x.com/LigaEm" target="_blank" class="tw">X</a><a href="https://joint.org.mz/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇰🇮</span><span class="name">KANGO</span><span class="country">Kiribati</span></div><div class="member-links"><a href="https://www.facebook.com/Kiribati-Association-Non-Governmental-Organisation-KANGO-1958827684371486/" target="_blank" class="fb">Facebook</a><a href="https://x.com/KiribatiANGO" target="_blank" class="tw">X</a><a href="http://www.kango.org.ki/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇰🇷</span><span class="name">KCOC</span><span class="country">South Korea</span></div><div class="member-links"><a href="https://www.facebook.com/ngokcoc" target="_blank" class="fb">Facebook</a><a href="https://www.instagram.com/ngokcoc/" target="_blank" class="ig">Instagram</a><a href="http://www.ngokcoc.or.kr/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇱🇻</span><span class="name">LAPAS</span><span class="country">Latvia</span></div><div class="member-links"><a href="https://www.facebook.com/LAPAS-441927435881808/" target="_blank" class="fb">Facebook</a><a href="https://x.com/lapas_lv" target="_blank" class="tw">X</a><a href="https://www.instagram.com/lapas_lv/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/lapaslv/" target="_blank" class="li">LinkedIn</a><a href="https://lapas.lv/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇱🇹</span><span class="name">Lithuanian NGDO Platform</span><span class="country">Lithuania</span></div><div class="member-links"><a href="https://www.facebook.com/VystomojoBendradarbiavimoPlatforma/" target="_blank" class="fb">Facebook</a><a href="https://vbplatforma.org/LT" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇺</span><span class="name">MACOSS</span><span class="country">Mauritius</span></div><div class="member-links"><a href="https://www.facebook.com/Macoss-Mauritius-100361858527492/" target="_blank" class="fb">Facebook</a><a href="https://x.com/MACOSSMU" target="_blank" class="tw">X</a><a href="https://www.instagram.com/macossmauritius/" target="_blank" class="ig">Instagram</a><a href="https://macoss.mu/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌎</span><span class="name">MESA DE ARTICULACION</span><span class="country">Latin America</span></div><div class="member-links"><a href="https://www.facebook.com/mesaongsamericalatina/" target="_blank" class="fb">Facebook</a><a href="https://x.com/MesadeONGsAL" target="_blank" class="tw">X</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇳🇵</span><span class="name">NFN</span><span class="country">Nepal</span></div><div class="member-links"><a href="https://www.facebook.com/NFNCentral" target="_blank" class="fb">Facebook</a><a href="https://x.com/Ngofednepal" target="_blank" class="tw">X</a><a href="https://www.instagram.com/ngofederationofnepal/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/ngo-federation-of-nepal/" target="_blank" class="li">LinkedIn</a><a href="https://www.ngofederation.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇳🇬</span><span class="name">NNNGO</span><span class="country">Nigeria</span></div><div class="member-links"><a href="https://www.facebook.com/NNNGO/" target="_blank" class="fb">Facebook</a><a href="https://x.com/nnngo" target="_blank" class="tw">X</a><a href="https://www.instagram.com/nnngo25/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/nigeria-network-of-ngos/" target="_blank" class="li">LinkedIn</a><a href="https://nnngo.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇬</span><span class="name">PFNOSCM</span><span class="country">Madagascar</span></div><div class="member-links"><a href="https://www.facebook.com/societecivilemalgache" target="_blank" class="fb">Facebook</a><a href="https://x.com/pfnoscm" target="_blank" class="tw">X</a><a href="https://pfnoscm.mg/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌏</span><span class="name">PIANGO</span><span class="country">Pacific</span></div><div class="member-links"><a href="https://www.facebook.com/PIANGO2030" target="_blank" class="fb">Facebook</a><a href="https://x.com/Pacific_2030" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/piango2030/" target="_blank" class="li">LinkedIn</a><a href="https://piango.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇻</span><span class="name">PLATONG</span><span class="country">Cape Verde</span></div><div class="member-links"><a href="https://www.facebook.com/PlataformaDasOng" target="_blank" class="fb">Facebook</a><a href="https://www.instagram.com/plataforma_das_ongs/" target="_blank" class="ig">Instagram</a><a href="https://www.platongs.org.cv/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇵🇾</span><span class="name">POJOAJU</span><span class="country">Paraguay</span></div><div class="member-links"><a href="https://www.facebook.com/Pojoaju.Paraguay/" target="_blank" class="fb">Facebook</a><a href="https://x.com/pojoaju" target="_blank" class="tw">X</a><a href="https://www.instagram.com/pojoaju/" target="_blank" class="ig">Instagram</a><a href="https://www.pojoaju.org.py/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇵🇹</span><span class="name">PPONGD</span><span class="country">Portugal</span></div><div class="member-links"><a href="https://www.facebook.com/PlataformaONGD/" target="_blank" class="fb">Facebook</a><a href="https://www.instagram.com/plataformaongd/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/plataforma-portuguesa-das-ongd" target="_blank" class="li">LinkedIn</a><a href="https://www.plataformaongd.pt/english" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌍</span><span class="name">REPAOC</span><span class="country">West Africa</span></div><div class="member-links"><a href="https://www.facebook.com/repaoc.reseau" target="_blank" class="fb">Facebook</a><a href="https://x.com/REPAOCReseau" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/in/repaoc-r%C3%A9seau/" target="_blank" class="li">LinkedIn</a><a href="https://repaoc.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌍</span><span class="name">REPONGAC</span><span class="country">Central Africa</span></div><div class="member-links"><a href="https://www.facebook.com/Repongac/" target="_blank" class="fb">Facebook</a><a href="https://x.com/Repongac" target="_blank" class="tw">X</a><a href="https://www.instagram.com/repongacreseau/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/repongac/" target="_blank" class="li">LinkedIn</a><a href="https://www.repongac.com/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌍</span><span class="name">SADC-CNGO</span><span class="country">Southern Africa</span></div><div class="member-links"><a href="https://www.facebook.com/SADC.CNGOs/" target="_blank" class="fb">Facebook</a><a href="https://x.com/SADC_CNGO" target="_blank" class="tw">X</a><a href="http://www.sadccngo.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇻🇪</span><span class="name">Sinergia</span><span class="country">Venezuela</span></div><div class="member-links"><a href="https://www.facebook.com/acsinergia/videos/" target="_blank" class="fb">Facebook</a><a href="https://x.com/acsinergia" target="_blank" class="tw">X</a><a href="https://www.instagram.com/acsinergia/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/ac-sinergia/" target="_blank" class="li">LinkedIn</a><a href="https://acsinergia.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇹</span><span class="name">SKOP</span><span class="country">Malta</span></div><div class="member-links"><a href="https://www.facebook.com/SkopMalta/" target="_blank" class="fb">Facebook</a><a href="https://x.com/skopmalta" target="_blank" class="tw">X</a><a href="https://www.instagram.com/skopmalta/" target="_blank" class="ig">Instagram</a><a href="https://skop.mt/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇸🇮</span><span class="name">SLOGA</span><span class="country">Slovenia</span></div><div class="member-links"><a href="https://www.facebook.com/SLOGAplatform/" target="_blank" class="fb">Facebook</a><a href="https://x.com/sloga_platform" target="_blank" class="tw">X</a><a href="https://www.instagram.com/sloga_platform/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/sloga-platforma-nevladnih-organizacij-za-razvoj-globalno-u%C4%8Denje-in-humanitarno-pomo%C4%8D/" target="_blank" class="li">LinkedIn</a><a href="#" class="web">about:blank</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇫</span><span class="name">SPONG</span><span class="country">Burkina Faso</span></div><div class="member-links"><a href="https://www.facebook.com/SPONGBurkina/" target="_blank" class="fb">Facebook</a><a href="https://x.com/spong_burkina" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/s%C3%A9cr%C3%A9tariat-permanent-des-organisations-non-gouvernementales/" target="_blank" class="li">LinkedIn</a><a href="https://spong.bf/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇹🇼</span><span class="name">TAIWAN AID</span><span class="country">Taiwan</span></div><div class="member-links"><a href="https://www.facebook.com/pages/Taiwan-AID/613149692072855" target="_blank" class="fb">Facebook</a><a href="https://www.linkedin.com/company/taiwan-aid/" target="_blank" class="li">LinkedIn</a><a href="https://www.taiwanaid.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇬🇲</span><span class="name">TANGO</span><span class="country">Gambia</span></div><div class="member-links"><a href="https://www.facebook.com/tango.gambia.9" target="_blank" class="fb">Facebook</a><a href="https://x.com/TANGO_Gambia" target="_blank" class="tw">X</a><a href="https://www.instagram.com/tango.gm/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/tangogmb/about/" target="_blank" class="li">LinkedIn</a><a href="https://tango.gm/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇴</span><span class="name">UNITAS</span><span class="country">Bolivia</span></div><div class="member-links"><a href="https://www.facebook.com/redunitasbolivia/" target="_blank" class="fb">Facebook</a><a href="https://x.com/redunitas" target="_blank" class="tw">X</a><a href="https://www.instagram.com/unitasbolivia/" target="_blank" class="ig">Instagram</a><a href="https://redunitas.org/quienes-somos#mision" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇺🇬</span><span class="name">UNNGOF</span><span class="country">Uganda</span></div><div class="member-links"><a href="https://www.facebook.com/UNNGOF/" target="_blank" class="fb">Facebook</a><a href="https://x.com/ngoforum" target="_blank" class="tw">X</a><a href="https://www.instagram.com/ngoforumug/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/uganda-national-ngo-forum/" target="_blank" class="li">LinkedIn</a><a href="https://ngoforum.or.ug/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇮🇳</span><span class="name">VANI</span><span class="country">India</span></div><div class="member-links"><a href="https://www.facebook.com/TeamVANI/" target="_blank" class="fb">Facebook</a><a href="https://x.com/vani_info" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/vani-voluntary-action-network-india/" target="_blank" class="li">LinkedIn</a><a href="https://www.vaniindia.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇿🇲</span><span class="name">ZCSD</span><span class="country">Zambia</span></div><div class="member-links"><a href="https://www.facebook.com/ZambiaCouncilForSocialDevelopment/" target="_blank" class="fb">Facebook</a><a href="https://x.com/thezcsd" target="_blank" class="tw">X</a><a href="https://www.instagram.com/the.zcsd/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/in/zambia-council-for-social-development-597578328/" target="_blank" class="li">LinkedIn</a><a href="https://zcsdev.org.zm/" target="_blank" class="web">Website</a></div></div>
     </div>
     <p class="source-note">Sugerencia: agrega también los handles específicos de cada plataforma cuando publiques sobre ellas.</p>
   </div>
@@ -1236,7 +1318,6 @@ Desde los Exámenes Nacionales Voluntarios (ENV) y el seguimiento de un entorno 
     <h2 class="section-title">Social media posts</h2>
     <p class="lead">Ready-to-use content for any social platform.</p>
 
-    <!-- Visuals Box -->
     <div class="visuals-box">
       <span class="icon">🖼️</span>
       <div class="text">
@@ -1246,7 +1327,6 @@ Desde los Exámenes Nacionales Voluntarios (ENV) y el seguimiento de un entorno 
       <a href="https://canva.link/8piex4qo19y0on7" target="_blank" class="btn-link">🔗 Download visuals</a>
     </div>
 
-    <!-- Thursday, July 2 -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Intro HLPF</span><span class="post-date">Thursday, July 2 2026</span></div>
       <div class="post-body">
@@ -1266,7 +1346,6 @@ From Voluntary National Reviews (VNRs) to shaping the future beyond the #Agenda2
       </div>
     </div>
 
-    <!-- Friday, July 3 -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Report Announcement</span><span class="post-date">Friday, July 3 2026</span></div>
       <div class="post-body">
@@ -1290,7 +1369,6 @@ The report highlights practical lessons on peer exchange, shared learning, gover
       </div>
     </div>
 
-    <!-- Monday, July 7 -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Virtual Launch</span><span class="post-date">Monday, July 7 2026</span></div>
       <div class="post-body">
@@ -1309,7 +1387,6 @@ https://www.forus-international.org/en/extra/hub/resources-publications?modal_pa
       </div>
     </div>
 
-    <!-- Tuesday, July 8 -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">VNRs & Platforms</span><span class="post-date">Tuesday, July 8 2026</span></div>
       <div class="post-body">
@@ -1330,7 +1407,6 @@ https://www.forus-international.org/en/agenda-2030
       </div>
     </div>
 
-    <!-- Thursday, July 9 - Beyond the Review -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Beyond the Review</span><span class="post-date">Thursday, July 9 2026</span></div>
       <div class="post-body">
@@ -1351,7 +1427,6 @@ https://www.forus-international.org/en/a-space-for-us
       </div>
     </div>
 
-    <!-- Thursday, July 9 - EUSEE -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">EUSEE</span><span class="post-date">Thursday, July 9 2026</span></div>
       <div class="post-body">
@@ -1370,7 +1445,6 @@ https://www.forus-international.org/en/agenda-2030
       </div>
     </div>
 
-    <!-- Tuesday, July 14 - African Agency -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">African Agency</span><span class="post-date">Tuesday, July 14 2026 | 1:15–2:45 PM EST</span></div>
       <div class="post-body">
@@ -1387,7 +1461,6 @@ Join the discussion on governance, accountability and African leadership, highli
       </div>
     </div>
 
-    <!-- Tuesday, July 14 - Local2030 -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Local2030 Coalition</span><span class="post-date">Tuesday, July 14 2026 | 3:00–6:00 PM EDT</span></div>
       <div class="post-body">
@@ -1406,7 +1479,6 @@ Organiser: Local2030 Coalition – Working Group 1
       </div>
     </div>
 
-    <!-- Thursday, July 16 - Post-2030 -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Post-2030 Vision</span><span class="post-date">Thursday, July 16 2026 | 📸 Photo Gallery</span></div>
       <div class="post-body">
@@ -1433,7 +1505,6 @@ https://www.forus-international.org/en/campaigns?modal_page=campaign&modal_detai
       </div>
     </div>
 
-    <!-- July 19 - Recap -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Final Recap</span><span class="post-date">July 19 2026 | 📸 Photo Gallery</span></div>
       <div class="post-body">
@@ -1465,7 +1536,6 @@ From Voluntary National Reviews (VNRs) and monitoring the enabling environment f
     <p class="lead">As a complement to the report, Forus presents a series of "Beyond the Review" podcast episodes with voices from the network on SDG implementation and civil society engagement.</p>
 
     <div class="podcast-grid">
-      <!-- Episode 1 - Norway -->
       <div class="podcast-card">
         <div class="podcast-icon">
           <span class="num">1</span>
@@ -1478,7 +1548,6 @@ From Voluntary National Reviews (VNRs) and monitoring the enabling environment f
         <a href="https://soundcloud.com/user-975127425/beyond-the-review" target="_blank" class="podcast-link">🎧 Listen on SoundCloud →</a>
       </div>
 
-      <!-- Episode 2 - Estonia -->
       <div class="podcast-card">
         <div class="podcast-icon">
           <span class="num">2</span>
@@ -1491,7 +1560,6 @@ From Voluntary National Reviews (VNRs) and monitoring the enabling environment f
         <a href="https://soundcloud.com/user-975127425/beyond-the-review-lessons-from" target="_blank" class="podcast-link">🎧 Listen on SoundCloud →</a>
       </div>
 
-      <!-- Episode 3 - Brazil -->
       <div class="podcast-card">
         <div class="podcast-icon">
           <span class="num">3</span>
@@ -1536,7 +1604,6 @@ From Voluntary National Reviews (VNRs) and monitoring the enabling environment f
       </div>
     </div>
 
-    <!-- Post-2030 Report -->
     <div style="margin-top:36px; border-top:2px solid var(--forus-border); padding-top:28px;">
       <p class="eyebrow">Post-2030 Vision</p>
       <h2 class="section-title">Forus Post-2030 Vision</h2>
@@ -1607,41 +1674,98 @@ From Voluntary National Reviews (VNRs) and monitoring the enabling environment f
       <div class="account-card"><div class="av">UD</div><h5>UNDP</h5><span>@UNDP</span></div>
       <div class="account-card"><div class="av">EU</div><h5>European Union</h5><span>@EU</span></div>
     </div>
+
     <h4 style="margin:24px 0 10px; color:var(--forus-dark-azure);">Partner organizations</h4>
     <div class="account-grid">
       <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">AF</div><h5>AFD</h5><span>@AFD_France</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">EC</div><h5>European Commission</h5><span>@EU_Commission</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">OX</div><h5>Oxfam</h5><span>@Oxfam</span></div>
       <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">FF</div><h5>Fondation de France</h5><span>@Fondationfrance</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">OX</div><h5>Oxfam Hong Kong</h5><span>@oxfamhongkong</span></div>
       <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">GM</div><h5>Govt. Monaco</h5><span>@GvtMonaco</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">EU</div><h5>EU at UN</h5><span>@EUatUN</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">HV</div><h5>Hivos</h5><span>@Hivos</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">AS</div><h5>Action for Sustainable Dev.</h5><span>@Action4SD</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">AD</div><h5>Asia Development Alliance</h5><span>@ADA2030</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">GC</div><h5>Global Call to Action</h5><span>@GCAP</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">TP</div><h5>TAP Network</h5><span>@TAPNetwork</span></div>
       <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">CV</div><h5>CIVICUS</h5><span>@CIVICUS</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">TI</div><h5>Transparency Intl</h5><span>@TransparIntl</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">OXN</div><h5>Oxfam Novib</h5><span>@OxfamNovib</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">L23</div><h5>Local2030</h5><span>@Local2030</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">UNH</div><h5>UN-Habitat</h5><span>@UN_Habitat</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">CW</div><h5>Coalition for the UN we Need</h5><span>@CoalitionUN</span></div>
     </div>
+
     <h4 style="margin:24px 0 10px; color:var(--forus-dark-azure);">Member national platforms</h4>
-    <div class="account-grid" style="grid-template-columns:repeat(5,1fr);">
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">CO</div><h5>CONGAD</h5><span>Senegal</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">PI</div><h5>PIANGO</h5><span>Pacific</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">KC</div><h5>KCOC</h5><span>South Korea</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">IN</div><h5>INFID</h5><span>Indonesia</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">JA</div><h5>JANIC</h5><span>Japan</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">FO</div><h5>ForUM</h5><span>Norway</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">LA</div><h5>LAPAS</h5><span>Latvia</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">VA</div><h5>VANI</h5><span>India</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">TA</div><h5>TANGO</h5><span>Tanzania</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">CC</div><h5>CCOAIB</h5><span>Rwanda</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">CN</div><h5>CNONGD</h5><span>DR Congo</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">SP</div><h5>SPONG</h5><span>Burkina Faso</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">FO</div><h5>FONGDD</h5><span>Guinea</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">PL</div><h5>PLATONG</h5><span>Cabo Verde</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">KA</div><h5>KANGO</h5><span>Kiribati</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">CO</div><h5>CONGCOOP</h5><span>Guatemala</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">AS</div><h5>ASONOG</h5><span>Honduras</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">AB</div><h5>ABONG</h5><span>Brazil</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">TA</div><h5>Taiwan AID</h5><span>Taiwan</span></div>
+    <div class="member-grid">
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇷</span><span class="name">ABONG</span><span class="country">Brazil</span></div><div class="member-links"><a href="https://www.facebook.com/abong.osc" target="_blank" class="fb">Facebook</a><a href="https://x.com/abong_osc" target="_blank" class="tw">X</a><a href="https://www.instagram.com/abong_osc/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/abong/" target="_blank" class="li">LinkedIn</a><a href="https://abong.org.br/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇱</span><span class="name">ACCION</span><span class="country">Chile</span></div><div class="member-links"><a href="https://www.facebook.com/asociaciondeongs" target="_blank" class="fb">Facebook</a><a href="https://x.com/ACCIONdeONGs" target="_blank" class="tw">X</a><a href="https://www.instagram.com/accionag/" target="_blank" class="ig">Instagram</a><a href="#" class="web">accionag.cl</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌏</span><span class="name">ADA</span><span class="country">Asia</span></div><div class="member-links"><a href="https://www.facebook.com/ada2030/" target="_blank" class="fb">Facebook</a><a href="https://x.com/ada_2030" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/in/asiadevelopmentalliance/" target="_blank" class="li">LinkedIn</a><a href="https://ada2030.org/home/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇩🇴</span><span class="name">ALIANZA ONG</span><span class="country">Dominican Republic</span></div><div class="member-links"><a href="https://www.facebook.com/ONGalianza/D4" target="_blank" class="fb">Facebook</a><a href="https://x.com/AlianzaONG" target="_blank" class="tw">X</a><a href="https://www.instagram.com/alianzaongrd/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/alianza-ong/" target="_blank" class="li">LinkedIn</a><a href="https://alianzaong.org.do/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇵🇪</span><span class="name">ANC</span><span class="country">Peru</span></div><div class="member-links"><a href="https://www.facebook.com/ANCPERU" target="_blank" class="fb">Facebook</a><a href="https://x.com/ANCperu" target="_blank" class="tw">X</a><a href="https://www.anc.org.pe/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇺🇾</span><span class="name">ANONG</span><span class="country">Uruguay</span></div><div class="member-links"><a href="https://www.facebook.com/AnongUruguay" target="_blank" class="fb">Facebook</a><a href="https://x.com/AnongUruguay" target="_blank" class="tw">X</a><a href="https://www.instagram.com/anonguruguay/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/anong-asociaci%C3%B3n-nacional-de-ong-orientadas-al-desarrollo/" target="_blank" class="li">LinkedIn</a><a href="https://www.anong.org.uy/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇭🇳</span><span class="name">ASONOG</span><span class="country">Honduras</span></div><div class="member-links"><a href="https://www.facebook.com/ASONOG" target="_blank" class="fb">Facebook</a><a href="https://x.com/AsonogOficial" target="_blank" class="tw">X</a><a href="https://www.instagram.com/asonog_honduras/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/asonog/" target="_blank" class="li">LinkedIn</a><a href="https://asonog.hn/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇼</span><span class="name">BOCONGO</span><span class="country">Botswana</span></div><div class="member-links"><a href="https://www.facebook.com/bocongo" target="_blank" class="fb">Facebook</a><a href="https://x.com/BOCONGO2" target="_blank" class="tw">X</a><a href="https://www.instagram.com/_bocongo1_/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/in/botswana-council-of-ngos-1b6a5622a/" target="_blank" class="li">LinkedIn</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇬🇧</span><span class="name">BOND</span><span class="country">UK</span></div><div class="member-links"><a href="https://www.facebook.com/bond.org.uk" target="_blank" class="fb">Facebook</a><a href="https://x.com/bondngo" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/bond-uk/" target="_blank" class="li">LinkedIn</a><a href="https://www.bond.org.uk/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇳</span><span class="name">CANGO</span><span class="country">China</span></div><div class="member-links"><a href="https://www.cango.vip/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇰🇭</span><span class="name">CCC</span><span class="country">Cambodia</span></div><div class="member-links"><a href="https://www.facebook.com/CCCsince1990/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CCC_Cambodia" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/cooperation-committee-for-cambodia/" target="_blank" class="li">LinkedIn</a><a href="https://www.ccc-cambodia.org/kh" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇦</span><span class="name">Cooperation Canada</span><span class="country">Canada</span></div><div class="member-links"><a href="https://www.facebook.com/cooperationcanada" target="_blank" class="fb">Facebook</a><a href="https://x.com/cooperation_ca" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/cooperation-canada/" target="_blank" class="li">LinkedIn</a><a href="https://cooperation.ca/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇷🇼</span><span class="name">CCOAIB</span><span class="country">Rwanda</span></div><div class="member-links"><a href="https://www.facebook.com/ccoaib/" target="_blank" class="fb">Facebook</a><a href="https://x.com/ccoaib_rwanda" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/ccoaibrwanda/" target="_blank" class="li">LinkedIn</a><a href="https://ccoaib.rw/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇬</span><span class="name">CCOD</span><span class="country">Republic of the Congo</span></div><div class="member-links"><a href="https://www.facebook.com/pcpacongo.brazzaville/" target="_blank" class="fb">Facebook</a><a href="https://www.instagram.com/ccoaibr/" target="_blank" class="ig">Instagram</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇴</span><span class="name">CCONG</span><span class="country">Colombia</span></div><div class="member-links"><a href="https://www.facebook.com/confederacioncolombianadeong" target="_blank" class="fb">Facebook</a><a href="https://x.com/CCONGcolombia" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/in/ccong-confederaci%C3%B3n-colombiana-de-ong-b9173a58/" target="_blank" class="li">LinkedIn</a><a href="https://www.ccong.org.co/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇸🇨</span><span class="name">CEPS</span><span class="country">Seychelles</span></div><div class="member-links"><a href="https://www.facebook.com/CEPSseychelles" target="_blank" class="fb">Facebook</a><a href="https://www.ceps.sc/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇯</span><span class="name">CFRONG</span><span class="country">Benin</span></div><div class="member-links"></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇰</span><span class="name">CICSO</span><span class="country">Cook Islands</span></div><div class="member-links"><a href="https://www.facebook.com/CookIslandsSocietyOrganisations" target="_blank" class="fb">Facebook</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇳🇿</span><span class="name">CID</span><span class="country">New Zealand</span></div><div class="member-links"><a href="https://www.facebook.com/CouncilforInternationalDevelopment/" target="_blank" class="fb">Facebook</a><a href="https://x.com/cid_online" target="_blank" class="tw">X</a><a href="https://www.instagram.com/cid_nz/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/cid-nz/" target="_blank" class="li">LinkedIn</a><a href="https://www.cid.org.nz/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇹🇩</span><span class="name">CILONG</span><span class="country">Chad</span></div><div class="member-links"></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇫</span><span class="name">CIONGCA</span><span class="country">Central African Republic</span></div><div class="member-links"><a href="https://www.facebook.com/ciongca/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CIONGCA" target="_blank" class="tw">X</a><a href="http://www.ciongca.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇩</span><span class="name">CNONGD</span><span class="country">DR Congo</span></div><div class="member-links"><a href="https://www.facebook.com/CnongdRDC" target="_blank" class="fb">Facebook</a><a href="https://x.com/CnongdRdc" target="_blank" class="tw">X</a><a href="https://www.cnongdrdc.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇵🇭</span><span class="name">CODE-NGO</span><span class="country">Philippines</span></div><div class="member-links"><a href="https://www.facebook.com/caucusofdevelopmentngonetworks/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CODE_NGO" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/caucus-of-development-ngo-networks-inc-code-ngo/" target="_blank" class="li">LinkedIn</a><a href="https://code-ngo.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇪🇺</span><span class="name">CONCORD</span><span class="country">Europe</span></div><div class="member-links"><a href="https://www.facebook.com/CONCORDeurope/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CONCORD_Europe" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/concord-europe/" target="_blank" class="li">LinkedIn</a><a href="https://concordeurope.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇪</span><span class="name">CONCORD</span><span class="country">Belgium</span></div><div class="member-links"></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇸🇳</span><span class="name">CONGAD</span><span class="country">Senegal</span></div><div class="member-links"><a href="https://www.facebook.com/CONGAD.org/" target="_blank" class="fb">Facebook</a><a href="https://www.linkedin.com/in/congad-senegal-l-officiel-181408396/" target="_blank" class="li">LinkedIn</a><a href="https://www.congad.sn/carte/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇬🇹</span><span class="name">CONGCOOP</span><span class="country">Guatemala</span></div><div class="member-links"><a href="https://www.facebook.com/congcoop.coordinacion/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CONGCOOP" target="_blank" class="tw">X</a><a href="https://www.instagram.com/congcoop/" target="_blank" class="ig">Instagram</a><a href="https://www.congcoop.org.gt/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇪🇸</span><span class="name">COORDINADORA ONGD</span><span class="country">Spain</span></div><div class="member-links"><a href="https://www.facebook.com/coordinadoradeongd.espana/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CoordiONGD" target="_blank" class="tw">X</a><a href="https://www.instagram.com/coordiongd/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/coordinadora-de-organizaciones-para-el-desarrollo/" target="_blank" class="li">LinkedIn</a><a href="https://coordinadoraongd.org/coordinadora/english/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇫🇷</span><span class="name">COORDINATION SUD</span><span class="country">France</span></div><div class="member-links"><a href="https://www.facebook.com/Coordination-SUD-270517446303/" target="_blank" class="fb">Facebook</a><a href="https://x.com/coordinationsud" target="_blank" class="tw">X</a><a href="https://www.instagram.com/coordinationsud/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/coordinationsud/" target="_blank" class="li">LinkedIn</a><a href="https://www.coordinationsud.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇮</span><span class="name">CSCI</span><span class="country">Ivory Coast</span></div><div class="member-links"><a href="https://www.facebook.com/societecivile225/" target="_blank" class="fb">Facebook</a><a href="https://www.linkedin.com/in/csci-convention-de-la-soci%C3%A9t%C3%A9-civile-ivoirienne-5b27121a0/" target="_blank" class="li">LinkedIn</a><a href="http://fr.csci.group/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇮🇪</span><span class="name">DOCHAS</span><span class="country">Ireland</span></div><div class="member-links"><a href="https://www.facebook.com/dochasnetwork/" target="_blank" class="fb">Facebook</a><a href="https://x.com/Dochasnetwork" target="_blank" class="tw">X</a><a href="https://www.instagram.com/dochasnetwork/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/dochasnetwork/" target="_blank" class="li">LinkedIn</a><a href="https://dochas.ie/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇦🇷</span><span class="name">EENGD</span><span class="country">Argentina</span></div><div class="member-links"><a href="https://www.facebook.com/encuentrodeongs/" target="_blank" class="fb">Facebook</a><a href="https://x.com/red_eengd" target="_blank" class="tw">X</a><a href="https://www.instagram.com/red.encuentro/" target="_blank" class="ig">Instagram</a><a href="https://www.redencuentro.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇦</span><span class="name">Espace Associatif</span><span class="country">Morocco</span></div><div class="member-links"><a href="https://www.facebook.com/Espace.Associatif.ma/" target="_blank" class="fb">Facebook</a><a href="https://x.com/espassociatif" target="_blank" class="tw">X</a><a href="https://www.espace-associatif.ma/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇫🇯</span><span class="name">FCOSS</span><span class="country">Fiji</span></div><div class="member-links"><a href="https://www.facebook.com/FijiCOSS/" target="_blank" class="fb">Facebook</a><a href="https://x.com/FijiCouncil" target="_blank" class="tw">X</a><a href="https://www.instagram.com/fcoss22/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/fiji-council-of-social-services/" target="_blank" class="li">LinkedIn</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇱</span><span class="name">FECONG</span><span class="country">Mali</span></div><div class="member-links"><a href="https://www.facebook.com/FecongMali/" target="_blank" class="fb">Facebook</a><a href="https://x.com/FecongMali" target="_blank" class="tw">X</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇫🇮</span><span class="name">FINGO</span><span class="country">Finland</span></div><div class="member-links"><a href="https://www.facebook.com/FingoFi/" target="_blank" class="fb">Facebook</a><a href="https://x.com/FingoFi" target="_blank" class="tw">X</a><a href="https://www.instagram.com/fingofi/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/fingo-fi" target="_blank" class="li">LinkedIn</a><a href="https://fingo.fi/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇷🇴</span><span class="name">FOND</span><span class="country">Romania</span></div><div class="member-links"><a href="https://www.facebook.com/FONDRomania/" target="_blank" class="fb">Facebook</a><a href="https://x.com/FONDRomania" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/fond-romania/" target="_blank" class="li">LinkedIn</a><a href="https://www.fondromania.org/en/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇦🇴</span><span class="name">FONGA</span><span class="country">Angola</span></div><div class="member-links"><a href="https://www.facebook.com/plateformeFONGA" target="_blank" class="fb">Facebook</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇬🇳</span><span class="name">FONGDD</span><span class="country">Guinea</span></div><div class="member-links"></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇸🇹</span><span class="name">FONG-STP</span><span class="country">Sao Tome and Principe</span></div><div class="member-links"><a href="https://www.facebook.com/Federa%C3%A7%C3%A3o-das-ONGs-em-S%C3%A3o-Tom%C3%A9-e-Pr%C3%ADncipe-249383918425584/" target="_blank" class="fb">Facebook</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇹🇬</span><span class="name">FONGTO</span><span class="country">Togo</span></div><div class="member-links"><a href="https://www.facebook.com/Fongtofficiel/" target="_blank" class="fb">Facebook</a><a href="https://x.com/FongtoOfficiel" target="_blank" class="tw">X</a><a href="https://www.instagram.com/fongto.officiel/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/in/federation-des-ong-au-togo-618b43257/" target="_blank" class="li">LinkedIn</a><a href="https://fongto.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇿</span><span class="name">FORS</span><span class="country">Czech Republic</span></div><div class="member-links"><a href="https://www.facebook.com/FoRSPraha/" target="_blank" class="fb">Facebook</a><a href="https://x.com/fors_cz" target="_blank" class="tw">X</a><a href="https://www.instagram.com/fors_cz/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/fors_3" target="_blank" class="li">LinkedIn</a><a href="https://fors.cz/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇩🇰</span><span class="name">Globalt Fokus</span><span class="country">Denmark</span></div><div class="member-links"><a href="https://www.facebook.com/globaltfokusngo/about/" target="_blank" class="fb">Facebook</a><a href="https://x.com/globaltfokus" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/globalt-fokus/" target="_blank" class="li">LinkedIn</a><a href="https://globaltfokus.dk/da/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇭🇺</span><span class="name">HAND</span><span class="country">Hungary</span></div><div class="member-links"><a href="https://x.com/HANDdevelopment" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/handassociation" target="_blank" class="li">LinkedIn</a><a href="https://hand.org.hu/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇮🇩</span><span class="name">INFID</span><span class="country">Indonesia</span></div><div class="member-links"><a href="https://www.facebook.com/infid/" target="_blank" class="fb">Facebook</a><a href="https://x.com/infid_ID" target="_blank" class="tw">X</a><a href="https://www.instagram.com/infid_id/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/infid/" target="_blank" class="li">LinkedIn</a><a href="https://www.infid.org/en" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇺🇸</span><span class="name">INTERACTION</span><span class="country">United States</span></div><div class="member-links"><a href="https://www.facebook.com/InterActionOrg/" target="_blank" class="fb">Facebook</a><a href="https://x.com/interactionorg" target="_blank" class="tw">X</a><a href="https://www.instagram.com/interaction/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/interaction/" target="_blank" class="li">LinkedIn</a><a href="https://www.interaction.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇯🇵</span><span class="name">JANIC</span><span class="country">Japan</span></div><div class="member-links"><a href="https://www.facebook.com/janic.org/" target="_blank" class="fb">Facebook</a><a href="https://x.com/ngo_janic" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/janic-ngo" target="_blank" class="li">LinkedIn</a><a href="https://www.janic.org/en/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇿</span><span class="name">JOINT</span><span class="country">Mozambique</span></div><div class="member-links"><a href="https://www.facebook.com/joint.mz/" target="_blank" class="fb">Facebook</a><a href="https://x.com/LigaEm" target="_blank" class="tw">X</a><a href="https://joint.org.mz/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇰🇮</span><span class="name">KANGO</span><span class="country">Kiribati</span></div><div class="member-links"><a href="https://www.facebook.com/Kiribati-Association-Non-Governmental-Organisation-KANGO-1958827684371486/" target="_blank" class="fb">Facebook</a><a href="https://x.com/KiribatiANGO" target="_blank" class="tw">X</a><a href="http://www.kango.org.ki/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇰🇷</span><span class="name">KCOC</span><span class="country">South Korea</span></div><div class="member-links"><a href="https://www.facebook.com/ngokcoc" target="_blank" class="fb">Facebook</a><a href="https://www.instagram.com/ngokcoc/" target="_blank" class="ig">Instagram</a><a href="http://www.ngokcoc.or.kr/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇱🇻</span><span class="name">LAPAS</span><span class="country">Latvia</span></div><div class="member-links"><a href="https://www.facebook.com/LAPAS-441927435881808/" target="_blank" class="fb">Facebook</a><a href="https://x.com/lapas_lv" target="_blank" class="tw">X</a><a href="https://www.instagram.com/lapas_lv/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/lapaslv/" target="_blank" class="li">LinkedIn</a><a href="https://lapas.lv/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇱🇹</span><span class="name">Lithuanian NGDO Platform</span><span class="country">Lithuania</span></div><div class="member-links"><a href="https://www.facebook.com/VystomojoBendradarbiavimoPlatforma/" target="_blank" class="fb">Facebook</a><a href="https://vbplatforma.org/LT" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇺</span><span class="name">MACOSS</span><span class="country">Mauritius</span></div><div class="member-links"><a href="https://www.facebook.com/Macoss-Mauritius-100361858527492/" target="_blank" class="fb">Facebook</a><a href="https://x.com/MACOSSMU" target="_blank" class="tw">X</a><a href="https://www.instagram.com/macossmauritius/" target="_blank" class="ig">Instagram</a><a href="https://macoss.mu/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌎</span><span class="name">MESA DE ARTICULACION</span><span class="country">Latin America</span></div><div class="member-links"><a href="https://www.facebook.com/mesaongsamericalatina/" target="_blank" class="fb">Facebook</a><a href="https://x.com/MesadeONGsAL" target="_blank" class="tw">X</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇳🇵</span><span class="name">NFN</span><span class="country">Nepal</span></div><div class="member-links"><a href="https://www.facebook.com/NFNCentral" target="_blank" class="fb">Facebook</a><a href="https://x.com/Ngofednepal" target="_blank" class="tw">X</a><a href="https://www.instagram.com/ngofederationofnepal/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/ngo-federation-of-nepal/" target="_blank" class="li">LinkedIn</a><a href="https://www.ngofederation.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇳🇬</span><span class="name">NNNGO</span><span class="country">Nigeria</span></div><div class="member-links"><a href="https://www.facebook.com/NNNGO/" target="_blank" class="fb">Facebook</a><a href="https://x.com/nnngo" target="_blank" class="tw">X</a><a href="https://www.instagram.com/nnngo25/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/nigeria-network-of-ngos/" target="_blank" class="li">LinkedIn</a><a href="https://nnngo.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇬</span><span class="name">PFNOSCM</span><span class="country">Madagascar</span></div><div class="member-links"><a href="https://www.facebook.com/societecivilemalgache" target="_blank" class="fb">Facebook</a><a href="https://x.com/pfnoscm" target="_blank" class="tw">X</a><a href="https://pfnoscm.mg/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌏</span><span class="name">PIANGO</span><span class="country">Pacific</span></div><div class="member-links"><a href="https://www.facebook.com/PIANGO2030" target="_blank" class="fb">Facebook</a><a href="https://x.com/Pacific_2030" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/piango2030/" target="_blank" class="li">LinkedIn</a><a href="https://piango.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇻</span><span class="name">PLATONG</span><span class="country">Cape Verde</span></div><div class="member-links"><a href="https://www.facebook.com/PlataformaDasOng" target="_blank" class="fb">Facebook</a><a href="https://www.instagram.com/plataforma_das_ongs/" target="_blank" class="ig">Instagram</a><a href="https://www.platongs.org.cv/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇵🇾</span><span class="name">POJOAJU</span><span class="country">Paraguay</span></div><div class="member-links"><a href="https://www.facebook.com/Pojoaju.Paraguay/" target="_blank" class="fb">Facebook</a><a href="https://x.com/pojoaju" target="_blank" class="tw">X</a><a href="https://www.instagram.com/pojoaju/" target="_blank" class="ig">Instagram</a><a href="https://www.pojoaju.org.py/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇵🇹</span><span class="name">PPONGD</span><span class="country">Portugal</span></div><div class="member-links"><a href="https://www.facebook.com/PlataformaONGD/" target="_blank" class="fb">Facebook</a><a href="https://www.instagram.com/plataformaongd/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/plataforma-portuguesa-das-ongd" target="_blank" class="li">LinkedIn</a><a href="https://www.plataformaongd.pt/english" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌍</span><span class="name">REPAOC</span><span class="country">West Africa</span></div><div class="member-links"><a href="https://www.facebook.com/repaoc.reseau" target="_blank" class="fb">Facebook</a><a href="https://x.com/REPAOCReseau" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/in/repaoc-r%C3%A9seau/" target="_blank" class="li">LinkedIn</a><a href="https://repaoc.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌍</span><span class="name">REPONGAC</span><span class="country">Central Africa</span></div><div class="member-links"><a href="https://www.facebook.com/Repongac/" target="_blank" class="fb">Facebook</a><a href="https://x.com/Repongac" target="_blank" class="tw">X</a><a href="https://www.instagram.com/repongacreseau/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/repongac/" target="_blank" class="li">LinkedIn</a><a href="https://www.repongac.com/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌍</span><span class="name">SADC-CNGO</span><span class="country">Southern Africa</span></div><div class="member-links"><a href="https://www.facebook.com/SADC.CNGOs/" target="_blank" class="fb">Facebook</a><a href="https://x.com/SADC_CNGO" target="_blank" class="tw">X</a><a href="http://www.sadccngo.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇻🇪</span><span class="name">Sinergia</span><span class="country">Venezuela</span></div><div class="member-links"><a href="https://www.facebook.com/acsinergia/videos/" target="_blank" class="fb">Facebook</a><a href="https://x.com/acsinergia" target="_blank" class="tw">X</a><a href="https://www.instagram.com/acsinergia/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/ac-sinergia/" target="_blank" class="li">LinkedIn</a><a href="https://acsinergia.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇹</span><span class="name">SKOP</span><span class="country">Malta</span></div><div class="member-links"><a href="https://www.facebook.com/SkopMalta/" target="_blank" class="fb">Facebook</a><a href="https://x.com/skopmalta" target="_blank" class="tw">X</a><a href="https://www.instagram.com/skopmalta/" target="_blank" class="ig">Instagram</a><a href="https://skop.mt/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇸🇮</span><span class="name">SLOGA</span><span class="country">Slovenia</span></div><div class="member-links"><a href="https://www.facebook.com/SLOGAplatform/" target="_blank" class="fb">Facebook</a><a href="https://x.com/sloga_platform" target="_blank" class="tw">X</a><a href="https://www.instagram.com/sloga_platform/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/sloga-platforma-nevladnih-organizacij-za-razvoj-globalno-u%C4%8Denje-in-humanitarno-pomo%C4%8D/" target="_blank" class="li">LinkedIn</a><a href="#" class="web">about:blank</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇫</span><span class="name">SPONG</span><span class="country">Burkina Faso</span></div><div class="member-links"><a href="https://www.facebook.com/SPONGBurkina/" target="_blank" class="fb">Facebook</a><a href="https://x.com/spong_burkina" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/s%C3%A9cr%C3%A9tariat-permanent-des-organisations-non-gouvernementales/" target="_blank" class="li">LinkedIn</a><a href="https://spong.bf/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇹🇼</span><span class="name">TAIWAN AID</span><span class="country">Taiwan</span></div><div class="member-links"><a href="https://www.facebook.com/pages/Taiwan-AID/613149692072855" target="_blank" class="fb">Facebook</a><a href="https://www.linkedin.com/company/taiwan-aid/" target="_blank" class="li">LinkedIn</a><a href="https://www.taiwanaid.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇬🇲</span><span class="name">TANGO</span><span class="country">Gambia</span></div><div class="member-links"><a href="https://www.facebook.com/tango.gambia.9" target="_blank" class="fb">Facebook</a><a href="https://x.com/TANGO_Gambia" target="_blank" class="tw">X</a><a href="https://www.instagram.com/tango.gm/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/tangogmb/about/" target="_blank" class="li">LinkedIn</a><a href="https://tango.gm/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇴</span><span class="name">UNITAS</span><span class="country">Bolivia</span></div><div class="member-links"><a href="https://www.facebook.com/redunitasbolivia/" target="_blank" class="fb">Facebook</a><a href="https://x.com/redunitas" target="_blank" class="tw">X</a><a href="https://www.instagram.com/unitasbolivia/" target="_blank" class="ig">Instagram</a><a href="https://redunitas.org/quienes-somos#mision" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇺🇬</span><span class="name">UNNGOF</span><span class="country">Uganda</span></div><div class="member-links"><a href="https://www.facebook.com/UNNGOF/" target="_blank" class="fb">Facebook</a><a href="https://x.com/ngoforum" target="_blank" class="tw">X</a><a href="https://www.instagram.com/ngoforumug/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/uganda-national-ngo-forum/" target="_blank" class="li">LinkedIn</a><a href="https://ngoforum.or.ug/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇮🇳</span><span class="name">VANI</span><span class="country">India</span></div><div class="member-links"><a href="https://www.facebook.com/TeamVANI/" target="_blank" class="fb">Facebook</a><a href="https://x.com/vani_info" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/vani-voluntary-action-network-india/" target="_blank" class="li">LinkedIn</a><a href="https://www.vaniindia.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇿🇲</span><span class="name">ZCSD</span><span class="country">Zambia</span></div><div class="member-links"><a href="https://www.facebook.com/ZambiaCouncilForSocialDevelopment/" target="_blank" class="fb">Facebook</a><a href="https://x.com/thezcsd" target="_blank" class="tw">X</a><a href="https://www.instagram.com/the.zcsd/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/in/zambia-council-for-social-development-597578328/" target="_blank" class="li">LinkedIn</a><a href="https://zcsdev.org.zm/" target="_blank" class="web">Website</a></div></div>
     </div>
     <p class="source-note">Tip: also add the specific handles of each platform when posting about them.</p>
   </div>
@@ -1682,7 +1806,6 @@ From Voluntary National Reviews (VNRs) and monitoring the enabling environment f
     <h2 class="section-title">Publications pour réseaux sociaux</h2>
     <p class="lead">Contenu prêt à l'emploi pour toute plateforme sociale.</p>
 
-    <!-- Visuals Box -->
     <div class="visuals-box">
       <span class="icon">🖼️</span>
       <div class="text">
@@ -1692,7 +1815,6 @@ From Voluntary National Reviews (VNRs) and monitoring the enabling environment f
       <a href="https://canva.link/8piex4qo19y0on7" target="_blank" class="btn-link">🔗 Télécharger les visuels</a>
     </div>
 
-    <!-- Jeudi 2 juillet -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Intro HLPF</span><span class="post-date">Jeudi 2 juillet 2026</span></div>
       <div class="post-body">
@@ -1712,7 +1834,6 @@ Des Examens nationaux volontaires (ENV) à l'avenir de l'#Agenda2030, nous somme
       </div>
     </div>
 
-    <!-- Vendredi 3 juillet -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Annonce du rapport</span><span class="post-date">Vendredi 3 juillet 2026</span></div>
       <div class="post-body">
@@ -1736,7 +1857,6 @@ Le rapport met en avant des enseignements pratiques sur les échanges entre pair
       </div>
     </div>
 
-    <!-- Lundi 7 juillet -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Lancement virtuel</span><span class="post-date">Lundi 7 juillet 2026</span></div>
       <div class="post-body">
@@ -1755,7 +1875,6 @@ https://www.forus-international.org/en/extra/hub/resources-publications?modal_pa
       </div>
     </div>
 
-    <!-- Mardi 8 juillet -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">ENV et plateformes</span><span class="post-date">Mardi 8 juillet 2026</span></div>
       <div class="post-body">
@@ -1776,7 +1895,6 @@ https://www.forus-international.org/en/agenda-2030
       </div>
     </div>
 
-    <!-- Jeudi 9 juillet - Beyond the Review -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Beyond the Review</span><span class="post-date">Jeudi 9 juillet 2026</span></div>
       <div class="post-body">
@@ -1797,7 +1915,6 @@ https://www.forus-international.org/en/a-space-for-us
       </div>
     </div>
 
-    <!-- Jeudi 9 juillet - EUSEE -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">EUSEE</span><span class="post-date">Jeudi 9 juillet 2026</span></div>
       <div class="post-body">
@@ -1816,7 +1933,6 @@ https://www.forus-international.org/en/agenda-2030
       </div>
     </div>
 
-    <!-- Mardi 14 juillet - African Agency -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">African Agency</span><span class="post-date">Mardi 14 juillet 2026 | 13:15–14:45 EST</span></div>
       <div class="post-body">
@@ -1833,7 +1949,6 @@ Participez à cette discussion sur la gouvernance, la redevabilité et le leader
       </div>
     </div>
 
-    <!-- Mardi 14 juillet - Local2030 -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Local2030 Coalition</span><span class="post-date">Mardi 14 juillet 2026 | 15:00–18:00 EDT</span></div>
       <div class="post-body">
@@ -1852,7 +1967,6 @@ Organisateur : Coalition Local2030 – Groupe de travail 1
       </div>
     </div>
 
-    <!-- Jeudi 16 juillet - Post-2030 -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Vision Post-2030</span><span class="post-date">Jeudi 16 juillet 2026 | 📸 Galerie photos</span></div>
       <div class="post-body">
@@ -1879,7 +1993,6 @@ https://www.forus-international.org/en/campaigns?modal_page=campaign&modal_detai
       </div>
     </div>
 
-    <!-- 19 juillet - Recap -->
     <div class="post-card">
       <div class="post-head"><span class="obj-pill">Récapitulatif final</span><span class="post-date">19 juillet 2026 | 📸 Galerie photos</span></div>
       <div class="post-body">
@@ -1911,7 +2024,6 @@ Des Examens nationaux volontaires (ENV) au suivi d'un environnement favorable à
     <p class="lead">En complément du rapport, Forus présente une série d'épisodes du podcast "Beyond the Review" avec des voix du réseau sur la mise en œuvre des ODD et l'engagement de la société civile.</p>
 
     <div class="podcast-grid">
-      <!-- Épisode 1 - Norvège -->
       <div class="podcast-card">
         <div class="podcast-icon">
           <span class="num">1</span>
@@ -1924,7 +2036,6 @@ Des Examens nationaux volontaires (ENV) au suivi d'un environnement favorable à
         <a href="https://soundcloud.com/user-975127425/beyond-the-review" target="_blank" class="podcast-link">🎧 Écouter sur SoundCloud →</a>
       </div>
 
-      <!-- Épisode 2 - Estonie -->
       <div class="podcast-card">
         <div class="podcast-icon">
           <span class="num">2</span>
@@ -1937,7 +2048,6 @@ Des Examens nationaux volontaires (ENV) au suivi d'un environnement favorable à
         <a href="https://soundcloud.com/user-975127425/beyond-the-review-lessons-from" target="_blank" class="podcast-link">🎧 Écouter sur SoundCloud →</a>
       </div>
 
-      <!-- Épisode 3 - Brésil -->
       <div class="podcast-card">
         <div class="podcast-icon">
           <span class="num">3</span>
@@ -1982,7 +2092,6 @@ Des Examens nationaux volontaires (ENV) au suivi d'un environnement favorable à
       </div>
     </div>
 
-    <!-- Post-2030 Report -->
     <div style="margin-top:36px; border-top:2px solid var(--forus-border); padding-top:28px;">
       <p class="eyebrow">Vision Post-2030</p>
       <h2 class="section-title">Forus Post-2030 Vision</h2>
@@ -2055,41 +2164,98 @@ Des Examens nationaux volontaires (ENV) au suivi d'un environnement favorable à
       <div class="account-card"><div class="av">UD</div><h5>UNDP</h5><span>@UNDP</span></div>
       <div class="account-card"><div class="av">EU</div><h5>European Union</h5><span>@EU</span></div>
     </div>
+
     <h4 style="margin:24px 0 10px; color:var(--forus-dark-azure);">Organisations partenaires</h4>
     <div class="account-grid">
       <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">AF</div><h5>AFD</h5><span>@AFD_France</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">EC</div><h5>European Commission</h5><span>@EU_Commission</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">OX</div><h5>Oxfam</h5><span>@Oxfam</span></div>
       <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">FF</div><h5>Fondation de France</h5><span>@Fondationfrance</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">OX</div><h5>Oxfam Hong Kong</h5><span>@oxfamhongkong</span></div>
       <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">GM</div><h5>Govt. Monaco</h5><span>@GvtMonaco</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">EU</div><h5>EU at UN</h5><span>@EUatUN</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">HV</div><h5>Hivos</h5><span>@Hivos</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">AS</div><h5>Action for Sustainable Dev.</h5><span>@Action4SD</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">AD</div><h5>Asia Development Alliance</h5><span>@ADA2030</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">GC</div><h5>Global Call to Action</h5><span>@GCAP</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">TP</div><h5>TAP Network</h5><span>@TAPNetwork</span></div>
       <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">CV</div><h5>CIVICUS</h5><span>@CIVICUS</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">TI</div><h5>Transparency Intl</h5><span>@TransparIntl</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">OXN</div><h5>Oxfam Novib</h5><span>@OxfamNovib</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">L23</div><h5>Local2030</h5><span>@Local2030</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">UNH</div><h5>UN-Habitat</h5><span>@UN_Habitat</span></div>
+      <div class="account-card"><div class="av" style="background:var(--forus-vivid-crimson);">CW</div><h5>Coalition for the UN we Need</h5><span>@CoalitionUN</span></div>
     </div>
+
     <h4 style="margin:24px 0 10px; color:var(--forus-dark-azure);">Plateformes nationales membres</h4>
-    <div class="account-grid" style="grid-template-columns:repeat(5,1fr);">
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">CO</div><h5>CONGAD</h5><span>Sénégal</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">PI</div><h5>PIANGO</h5><span>Pacifique</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">KC</div><h5>KCOC</h5><span>Corée du Sud</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">IN</div><h5>INFID</h5><span>Indonésie</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">JA</div><h5>JANIC</h5><span>Japon</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">FO</div><h5>ForUM</h5><span>Norvège</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">LA</div><h5>LAPAS</h5><span>Lettonie</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">VA</div><h5>VANI</h5><span>Inde</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">TA</div><h5>TANGO</h5><span>Tanzanie</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">CC</div><h5>CCOAIB</h5><span>Rwanda</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">CN</div><h5>CNONGD</h5><span>RD Congo</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">SP</div><h5>SPONG</h5><span>Burkina Faso</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">FO</div><h5>FONGDD</h5><span>Guinée</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">PL</div><h5>PLATONG</h5><span>Cabo Verde</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">KA</div><h5>KANGO</h5><span>Kiribati</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">CO</div><h5>CONGCOOP</h5><span>Guatemala</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">AS</div><h5>ASONOG</h5><span>Honduras</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">AB</div><h5>ABONG</h5><span>Brésil</span></div>
-      <div class="account-card"><div class="av" style="background:var(--forus-green);">TA</div><h5>Taiwan AID</h5><span>Taïwan</span></div>
+    <div class="member-grid">
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇷</span><span class="name">ABONG</span><span class="country">Brazil</span></div><div class="member-links"><a href="https://www.facebook.com/abong.osc" target="_blank" class="fb">Facebook</a><a href="https://x.com/abong_osc" target="_blank" class="tw">X</a><a href="https://www.instagram.com/abong_osc/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/abong/" target="_blank" class="li">LinkedIn</a><a href="https://abong.org.br/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇱</span><span class="name">ACCION</span><span class="country">Chile</span></div><div class="member-links"><a href="https://www.facebook.com/asociaciondeongs" target="_blank" class="fb">Facebook</a><a href="https://x.com/ACCIONdeONGs" target="_blank" class="tw">X</a><a href="https://www.instagram.com/accionag/" target="_blank" class="ig">Instagram</a><a href="#" class="web">accionag.cl</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌏</span><span class="name">ADA</span><span class="country">Asia</span></div><div class="member-links"><a href="https://www.facebook.com/ada2030/" target="_blank" class="fb">Facebook</a><a href="https://x.com/ada_2030" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/in/asiadevelopmentalliance/" target="_blank" class="li">LinkedIn</a><a href="https://ada2030.org/home/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇩🇴</span><span class="name">ALIANZA ONG</span><span class="country">Dominican Republic</span></div><div class="member-links"><a href="https://www.facebook.com/ONGalianza/D4" target="_blank" class="fb">Facebook</a><a href="https://x.com/AlianzaONG" target="_blank" class="tw">X</a><a href="https://www.instagram.com/alianzaongrd/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/alianza-ong/" target="_blank" class="li">LinkedIn</a><a href="https://alianzaong.org.do/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇵🇪</span><span class="name">ANC</span><span class="country">Peru</span></div><div class="member-links"><a href="https://www.facebook.com/ANCPERU" target="_blank" class="fb">Facebook</a><a href="https://x.com/ANCperu" target="_blank" class="tw">X</a><a href="https://www.anc.org.pe/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇺🇾</span><span class="name">ANONG</span><span class="country">Uruguay</span></div><div class="member-links"><a href="https://www.facebook.com/AnongUruguay" target="_blank" class="fb">Facebook</a><a href="https://x.com/AnongUruguay" target="_blank" class="tw">X</a><a href="https://www.instagram.com/anonguruguay/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/anong-asociaci%C3%B3n-nacional-de-ong-orientadas-al-desarrollo/" target="_blank" class="li">LinkedIn</a><a href="https://www.anong.org.uy/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇭🇳</span><span class="name">ASONOG</span><span class="country">Honduras</span></div><div class="member-links"><a href="https://www.facebook.com/ASONOG" target="_blank" class="fb">Facebook</a><a href="https://x.com/AsonogOficial" target="_blank" class="tw">X</a><a href="https://www.instagram.com/asonog_honduras/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/asonog/" target="_blank" class="li">LinkedIn</a><a href="https://asonog.hn/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇼</span><span class="name">BOCONGO</span><span class="country">Botswana</span></div><div class="member-links"><a href="https://www.facebook.com/bocongo" target="_blank" class="fb">Facebook</a><a href="https://x.com/BOCONGO2" target="_blank" class="tw">X</a><a href="https://www.instagram.com/_bocongo1_/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/in/botswana-council-of-ngos-1b6a5622a/" target="_blank" class="li">LinkedIn</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇬🇧</span><span class="name">BOND</span><span class="country">UK</span></div><div class="member-links"><a href="https://www.facebook.com/bond.org.uk" target="_blank" class="fb">Facebook</a><a href="https://x.com/bondngo" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/bond-uk/" target="_blank" class="li">LinkedIn</a><a href="https://www.bond.org.uk/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇳</span><span class="name">CANGO</span><span class="country">China</span></div><div class="member-links"><a href="https://www.cango.vip/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇰🇭</span><span class="name">CCC</span><span class="country">Cambodia</span></div><div class="member-links"><a href="https://www.facebook.com/CCCsince1990/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CCC_Cambodia" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/cooperation-committee-for-cambodia/" target="_blank" class="li">LinkedIn</a><a href="https://www.ccc-cambodia.org/kh" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇦</span><span class="name">Cooperation Canada</span><span class="country">Canada</span></div><div class="member-links"><a href="https://www.facebook.com/cooperationcanada" target="_blank" class="fb">Facebook</a><a href="https://x.com/cooperation_ca" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/cooperation-canada/" target="_blank" class="li">LinkedIn</a><a href="https://cooperation.ca/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇷🇼</span><span class="name">CCOAIB</span><span class="country">Rwanda</span></div><div class="member-links"><a href="https://www.facebook.com/ccoaib/" target="_blank" class="fb">Facebook</a><a href="https://x.com/ccoaib_rwanda" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/ccoaibrwanda/" target="_blank" class="li">LinkedIn</a><a href="https://ccoaib.rw/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇬</span><span class="name">CCOD</span><span class="country">Republic of the Congo</span></div><div class="member-links"><a href="https://www.facebook.com/pcpacongo.brazzaville/" target="_blank" class="fb">Facebook</a><a href="https://www.instagram.com/ccoaibr/" target="_blank" class="ig">Instagram</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇴</span><span class="name">CCONG</span><span class="country">Colombia</span></div><div class="member-links"><a href="https://www.facebook.com/confederacioncolombianadeong" target="_blank" class="fb">Facebook</a><a href="https://x.com/CCONGcolombia" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/in/ccong-confederaci%C3%B3n-colombiana-de-ong-b9173a58/" target="_blank" class="li">LinkedIn</a><a href="https://www.ccong.org.co/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇸🇨</span><span class="name">CEPS</span><span class="country">Seychelles</span></div><div class="member-links"><a href="https://www.facebook.com/CEPSseychelles" target="_blank" class="fb">Facebook</a><a href="https://www.ceps.sc/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇯</span><span class="name">CFRONG</span><span class="country">Benin</span></div><div class="member-links"></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇰</span><span class="name">CICSO</span><span class="country">Cook Islands</span></div><div class="member-links"><a href="https://www.facebook.com/CookIslandsSocietyOrganisations" target="_blank" class="fb">Facebook</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇳🇿</span><span class="name">CID</span><span class="country">New Zealand</span></div><div class="member-links"><a href="https://www.facebook.com/CouncilforInternationalDevelopment/" target="_blank" class="fb">Facebook</a><a href="https://x.com/cid_online" target="_blank" class="tw">X</a><a href="https://www.instagram.com/cid_nz/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/cid-nz/" target="_blank" class="li">LinkedIn</a><a href="https://www.cid.org.nz/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇹🇩</span><span class="name">CILONG</span><span class="country">Chad</span></div><div class="member-links"></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇫</span><span class="name">CIONGCA</span><span class="country">Central African Republic</span></div><div class="member-links"><a href="https://www.facebook.com/ciongca/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CIONGCA" target="_blank" class="tw">X</a><a href="http://www.ciongca.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇩</span><span class="name">CNONGD</span><span class="country">DR Congo</span></div><div class="member-links"><a href="https://www.facebook.com/CnongdRDC" target="_blank" class="fb">Facebook</a><a href="https://x.com/CnongdRdc" target="_blank" class="tw">X</a><a href="https://www.cnongdrdc.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇵🇭</span><span class="name">CODE-NGO</span><span class="country">Philippines</span></div><div class="member-links"><a href="https://www.facebook.com/caucusofdevelopmentngonetworks/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CODE_NGO" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/caucus-of-development-ngo-networks-inc-code-ngo/" target="_blank" class="li">LinkedIn</a><a href="https://code-ngo.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇪🇺</span><span class="name">CONCORD</span><span class="country">Europe</span></div><div class="member-links"><a href="https://www.facebook.com/CONCORDeurope/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CONCORD_Europe" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/concord-europe/" target="_blank" class="li">LinkedIn</a><a href="https://concordeurope.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇪</span><span class="name">CONCORD</span><span class="country">Belgium</span></div><div class="member-links"></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇸🇳</span><span class="name">CONGAD</span><span class="country">Senegal</span></div><div class="member-links"><a href="https://www.facebook.com/CONGAD.org/" target="_blank" class="fb">Facebook</a><a href="https://www.linkedin.com/in/congad-senegal-l-officiel-181408396/" target="_blank" class="li">LinkedIn</a><a href="https://www.congad.sn/carte/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇬🇹</span><span class="name">CONGCOOP</span><span class="country">Guatemala</span></div><div class="member-links"><a href="https://www.facebook.com/congcoop.coordinacion/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CONGCOOP" target="_blank" class="tw">X</a><a href="https://www.instagram.com/congcoop/" target="_blank" class="ig">Instagram</a><a href="https://www.congcoop.org.gt/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇪🇸</span><span class="name">COORDINADORA ONGD</span><span class="country">Spain</span></div><div class="member-links"><a href="https://www.facebook.com/coordinadoradeongd.espana/" target="_blank" class="fb">Facebook</a><a href="https://x.com/CoordiONGD" target="_blank" class="tw">X</a><a href="https://www.instagram.com/coordiongd/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/coordinadora-de-organizaciones-para-el-desarrollo/" target="_blank" class="li">LinkedIn</a><a href="https://coordinadoraongd.org/coordinadora/english/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇫🇷</span><span class="name">COORDINATION SUD</span><span class="country">France</span></div><div class="member-links"><a href="https://www.facebook.com/Coordination-SUD-270517446303/" target="_blank" class="fb">Facebook</a><a href="https://x.com/coordinationsud" target="_blank" class="tw">X</a><a href="https://www.instagram.com/coordinationsud/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/coordinationsud/" target="_blank" class="li">LinkedIn</a><a href="https://www.coordinationsud.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇮</span><span class="name">CSCI</span><span class="country">Ivory Coast</span></div><div class="member-links"><a href="https://www.facebook.com/societecivile225/" target="_blank" class="fb">Facebook</a><a href="https://www.linkedin.com/in/csci-convention-de-la-soci%C3%A9t%C3%A9-civile-ivoirienne-5b27121a0/" target="_blank" class="li">LinkedIn</a><a href="http://fr.csci.group/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇮🇪</span><span class="name">DOCHAS</span><span class="country">Ireland</span></div><div class="member-links"><a href="https://www.facebook.com/dochasnetwork/" target="_blank" class="fb">Facebook</a><a href="https://x.com/Dochasnetwork" target="_blank" class="tw">X</a><a href="https://www.instagram.com/dochasnetwork/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/dochasnetwork/" target="_blank" class="li">LinkedIn</a><a href="https://dochas.ie/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇦🇷</span><span class="name">EENGD</span><span class="country">Argentina</span></div><div class="member-links"><a href="https://www.facebook.com/encuentrodeongs/" target="_blank" class="fb">Facebook</a><a href="https://x.com/red_eengd" target="_blank" class="tw">X</a><a href="https://www.instagram.com/red.encuentro/" target="_blank" class="ig">Instagram</a><a href="https://www.redencuentro.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇦</span><span class="name">Espace Associatif</span><span class="country">Morocco</span></div><div class="member-links"><a href="https://www.facebook.com/Espace.Associatif.ma/" target="_blank" class="fb">Facebook</a><a href="https://x.com/espassociatif" target="_blank" class="tw">X</a><a href="https://www.espace-associatif.ma/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇫🇯</span><span class="name">FCOSS</span><span class="country">Fiji</span></div><div class="member-links"><a href="https://www.facebook.com/FijiCOSS/" target="_blank" class="fb">Facebook</a><a href="https://x.com/FijiCouncil" target="_blank" class="tw">X</a><a href="https://www.instagram.com/fcoss22/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/fiji-council-of-social-services/" target="_blank" class="li">LinkedIn</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇱</span><span class="name">FECONG</span><span class="country">Mali</span></div><div class="member-links"><a href="https://www.facebook.com/FecongMali/" target="_blank" class="fb">Facebook</a><a href="https://x.com/FecongMali" target="_blank" class="tw">X</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇫🇮</span><span class="name">FINGO</span><span class="country">Finland</span></div><div class="member-links"><a href="https://www.facebook.com/FingoFi/" target="_blank" class="fb">Facebook</a><a href="https://x.com/FingoFi" target="_blank" class="tw">X</a><a href="https://www.instagram.com/fingofi/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/fingo-fi" target="_blank" class="li">LinkedIn</a><a href="https://fingo.fi/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇷🇴</span><span class="name">FOND</span><span class="country">Romania</span></div><div class="member-links"><a href="https://www.facebook.com/FONDRomania/" target="_blank" class="fb">Facebook</a><a href="https://x.com/FONDRomania" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/fond-romania/" target="_blank" class="li">LinkedIn</a><a href="https://www.fondromania.org/en/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇦🇴</span><span class="name">FONGA</span><span class="country">Angola</span></div><div class="member-links"><a href="https://www.facebook.com/plateformeFONGA" target="_blank" class="fb">Facebook</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇬🇳</span><span class="name">FONGDD</span><span class="country">Guinea</span></div><div class="member-links"></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇸🇹</span><span class="name">FONG-STP</span><span class="country">Sao Tome and Principe</span></div><div class="member-links"><a href="https://www.facebook.com/Federa%C3%A7%C3%A3o-das-ONGs-em-S%C3%A3o-Tom%C3%A9-e-Pr%C3%ADncipe-249383918425584/" target="_blank" class="fb">Facebook</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇹🇬</span><span class="name">FONGTO</span><span class="country">Togo</span></div><div class="member-links"><a href="https://www.facebook.com/Fongtofficiel/" target="_blank" class="fb">Facebook</a><a href="https://x.com/FongtoOfficiel" target="_blank" class="tw">X</a><a href="https://www.instagram.com/fongto.officiel/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/in/federation-des-ong-au-togo-618b43257/" target="_blank" class="li">LinkedIn</a><a href="https://fongto.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇿</span><span class="name">FORS</span><span class="country">Czech Republic</span></div><div class="member-links"><a href="https://www.facebook.com/FoRSPraha/" target="_blank" class="fb">Facebook</a><a href="https://x.com/fors_cz" target="_blank" class="tw">X</a><a href="https://www.instagram.com/fors_cz/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/fors_3" target="_blank" class="li">LinkedIn</a><a href="https://fors.cz/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇩🇰</span><span class="name">Globalt Fokus</span><span class="country">Denmark</span></div><div class="member-links"><a href="https://www.facebook.com/globaltfokusngo/about/" target="_blank" class="fb">Facebook</a><a href="https://x.com/globaltfokus" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/globalt-fokus/" target="_blank" class="li">LinkedIn</a><a href="https://globaltfokus.dk/da/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇭🇺</span><span class="name">HAND</span><span class="country">Hungary</span></div><div class="member-links"><a href="https://x.com/HANDdevelopment" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/handassociation" target="_blank" class="li">LinkedIn</a><a href="https://hand.org.hu/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇮🇩</span><span class="name">INFID</span><span class="country">Indonesia</span></div><div class="member-links"><a href="https://www.facebook.com/infid/" target="_blank" class="fb">Facebook</a><a href="https://x.com/infid_ID" target="_blank" class="tw">X</a><a href="https://www.instagram.com/infid_id/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/infid/" target="_blank" class="li">LinkedIn</a><a href="https://www.infid.org/en" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇺🇸</span><span class="name">INTERACTION</span><span class="country">United States</span></div><div class="member-links"><a href="https://www.facebook.com/InterActionOrg/" target="_blank" class="fb">Facebook</a><a href="https://x.com/interactionorg" target="_blank" class="tw">X</a><a href="https://www.instagram.com/interaction/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/interaction/" target="_blank" class="li">LinkedIn</a><a href="https://www.interaction.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇯🇵</span><span class="name">JANIC</span><span class="country">Japan</span></div><div class="member-links"><a href="https://www.facebook.com/janic.org/" target="_blank" class="fb">Facebook</a><a href="https://x.com/ngo_janic" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/janic-ngo" target="_blank" class="li">LinkedIn</a><a href="https://www.janic.org/en/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇿</span><span class="name">JOINT</span><span class="country">Mozambique</span></div><div class="member-links"><a href="https://www.facebook.com/joint.mz/" target="_blank" class="fb">Facebook</a><a href="https://x.com/LigaEm" target="_blank" class="tw">X</a><a href="https://joint.org.mz/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇰🇮</span><span class="name">KANGO</span><span class="country">Kiribati</span></div><div class="member-links"><a href="https://www.facebook.com/Kiribati-Association-Non-Governmental-Organisation-KANGO-1958827684371486/" target="_blank" class="fb">Facebook</a><a href="https://x.com/KiribatiANGO" target="_blank" class="tw">X</a><a href="http://www.kango.org.ki/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇰🇷</span><span class="name">KCOC</span><span class="country">South Korea</span></div><div class="member-links"><a href="https://www.facebook.com/ngokcoc" target="_blank" class="fb">Facebook</a><a href="https://www.instagram.com/ngokcoc/" target="_blank" class="ig">Instagram</a><a href="http://www.ngokcoc.or.kr/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇱🇻</span><span class="name">LAPAS</span><span class="country">Latvia</span></div><div class="member-links"><a href="https://www.facebook.com/LAPAS-441927435881808/" target="_blank" class="fb">Facebook</a><a href="https://x.com/lapas_lv" target="_blank" class="tw">X</a><a href="https://www.instagram.com/lapas_lv/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/lapaslv/" target="_blank" class="li">LinkedIn</a><a href="https://lapas.lv/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇱🇹</span><span class="name">Lithuanian NGDO Platform</span><span class="country">Lithuania</span></div><div class="member-links"><a href="https://www.facebook.com/VystomojoBendradarbiavimoPlatforma/" target="_blank" class="fb">Facebook</a><a href="https://vbplatforma.org/LT" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇺</span><span class="name">MACOSS</span><span class="country">Mauritius</span></div><div class="member-links"><a href="https://www.facebook.com/Macoss-Mauritius-100361858527492/" target="_blank" class="fb">Facebook</a><a href="https://x.com/MACOSSMU" target="_blank" class="tw">X</a><a href="https://www.instagram.com/macossmauritius/" target="_blank" class="ig">Instagram</a><a href="https://macoss.mu/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌎</span><span class="name">MESA DE ARTICULACION</span><span class="country">Latin America</span></div><div class="member-links"><a href="https://www.facebook.com/mesaongsamericalatina/" target="_blank" class="fb">Facebook</a><a href="https://x.com/MesadeONGsAL" target="_blank" class="tw">X</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇳🇵</span><span class="name">NFN</span><span class="country">Nepal</span></div><div class="member-links"><a href="https://www.facebook.com/NFNCentral" target="_blank" class="fb">Facebook</a><a href="https://x.com/Ngofednepal" target="_blank" class="tw">X</a><a href="https://www.instagram.com/ngofederationofnepal/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/ngo-federation-of-nepal/" target="_blank" class="li">LinkedIn</a><a href="https://www.ngofederation.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇳🇬</span><span class="name">NNNGO</span><span class="country">Nigeria</span></div><div class="member-links"><a href="https://www.facebook.com/NNNGO/" target="_blank" class="fb">Facebook</a><a href="https://x.com/nnngo" target="_blank" class="tw">X</a><a href="https://www.instagram.com/nnngo25/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/nigeria-network-of-ngos/" target="_blank" class="li">LinkedIn</a><a href="https://nnngo.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇬</span><span class="name">PFNOSCM</span><span class="country">Madagascar</span></div><div class="member-links"><a href="https://www.facebook.com/societecivilemalgache" target="_blank" class="fb">Facebook</a><a href="https://x.com/pfnoscm" target="_blank" class="tw">X</a><a href="https://pfnoscm.mg/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌏</span><span class="name">PIANGO</span><span class="country">Pacific</span></div><div class="member-links"><a href="https://www.facebook.com/PIANGO2030" target="_blank" class="fb">Facebook</a><a href="https://x.com/Pacific_2030" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/piango2030/" target="_blank" class="li">LinkedIn</a><a href="https://piango.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇨🇻</span><span class="name">PLATONG</span><span class="country">Cape Verde</span></div><div class="member-links"><a href="https://www.facebook.com/PlataformaDasOng" target="_blank" class="fb">Facebook</a><a href="https://www.instagram.com/plataforma_das_ongs/" target="_blank" class="ig">Instagram</a><a href="https://www.platongs.org.cv/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇵🇾</span><span class="name">POJOAJU</span><span class="country">Paraguay</span></div><div class="member-links"><a href="https://www.facebook.com/Pojoaju.Paraguay/" target="_blank" class="fb">Facebook</a><a href="https://x.com/pojoaju" target="_blank" class="tw">X</a><a href="https://www.instagram.com/pojoaju/" target="_blank" class="ig">Instagram</a><a href="https://www.pojoaju.org.py/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇵🇹</span><span class="name">PPONGD</span><span class="country">Portugal</span></div><div class="member-links"><a href="https://www.facebook.com/PlataformaONGD/" target="_blank" class="fb">Facebook</a><a href="https://www.instagram.com/plataformaongd/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/plataforma-portuguesa-das-ongd" target="_blank" class="li">LinkedIn</a><a href="https://www.plataformaongd.pt/english" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌍</span><span class="name">REPAOC</span><span class="country">West Africa</span></div><div class="member-links"><a href="https://www.facebook.com/repaoc.reseau" target="_blank" class="fb">Facebook</a><a href="https://x.com/REPAOCReseau" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/in/repaoc-r%C3%A9seau/" target="_blank" class="li">LinkedIn</a><a href="https://repaoc.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌍</span><span class="name">REPONGAC</span><span class="country">Central Africa</span></div><div class="member-links"><a href="https://www.facebook.com/Repongac/" target="_blank" class="fb">Facebook</a><a href="https://x.com/Repongac" target="_blank" class="tw">X</a><a href="https://www.instagram.com/repongacreseau/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/repongac/" target="_blank" class="li">LinkedIn</a><a href="https://www.repongac.com/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🌍</span><span class="name">SADC-CNGO</span><span class="country">Southern Africa</span></div><div class="member-links"><a href="https://www.facebook.com/SADC.CNGOs/" target="_blank" class="fb">Facebook</a><a href="https://x.com/SADC_CNGO" target="_blank" class="tw">X</a><a href="http://www.sadccngo.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇻🇪</span><span class="name">Sinergia</span><span class="country">Venezuela</span></div><div class="member-links"><a href="https://www.facebook.com/acsinergia/videos/" target="_blank" class="fb">Facebook</a><a href="https://x.com/acsinergia" target="_blank" class="tw">X</a><a href="https://www.instagram.com/acsinergia/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/ac-sinergia/" target="_blank" class="li">LinkedIn</a><a href="https://acsinergia.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇲🇹</span><span class="name">SKOP</span><span class="country">Malta</span></div><div class="member-links"><a href="https://www.facebook.com/SkopMalta/" target="_blank" class="fb">Facebook</a><a href="https://x.com/skopmalta" target="_blank" class="tw">X</a><a href="https://www.instagram.com/skopmalta/" target="_blank" class="ig">Instagram</a><a href="https://skop.mt/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇸🇮</span><span class="name">SLOGA</span><span class="country">Slovenia</span></div><div class="member-links"><a href="https://www.facebook.com/SLOGAplatform/" target="_blank" class="fb">Facebook</a><a href="https://x.com/sloga_platform" target="_blank" class="tw">X</a><a href="https://www.instagram.com/sloga_platform/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/sloga-platforma-nevladnih-organizacij-za-razvoj-globalno-u%C4%8Denje-in-humanitarno-pomo%C4%8D/" target="_blank" class="li">LinkedIn</a><a href="#" class="web">about:blank</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇫</span><span class="name">SPONG</span><span class="country">Burkina Faso</span></div><div class="member-links"><a href="https://www.facebook.com/SPONGBurkina/" target="_blank" class="fb">Facebook</a><a href="https://x.com/spong_burkina" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/s%C3%A9cr%C3%A9tariat-permanent-des-organisations-non-gouvernementales/" target="_blank" class="li">LinkedIn</a><a href="https://spong.bf/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇹🇼</span><span class="name">TAIWAN AID</span><span class="country">Taiwan</span></div><div class="member-links"><a href="https://www.facebook.com/pages/Taiwan-AID/613149692072855" target="_blank" class="fb">Facebook</a><a href="https://www.linkedin.com/company/taiwan-aid/" target="_blank" class="li">LinkedIn</a><a href="https://www.taiwanaid.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇬🇲</span><span class="name">TANGO</span><span class="country">Gambia</span></div><div class="member-links"><a href="https://www.facebook.com/tango.gambia.9" target="_blank" class="fb">Facebook</a><a href="https://x.com/TANGO_Gambia" target="_blank" class="tw">X</a><a href="https://www.instagram.com/tango.gm/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/tangogmb/about/" target="_blank" class="li">LinkedIn</a><a href="https://tango.gm/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇧🇴</span><span class="name">UNITAS</span><span class="country">Bolivia</span></div><div class="member-links"><a href="https://www.facebook.com/redunitasbolivia/" target="_blank" class="fb">Facebook</a><a href="https://x.com/redunitas" target="_blank" class="tw">X</a><a href="https://www.instagram.com/unitasbolivia/" target="_blank" class="ig">Instagram</a><a href="https://redunitas.org/quienes-somos#mision" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇺🇬</span><span class="name">UNNGOF</span><span class="country">Uganda</span></div><div class="member-links"><a href="https://www.facebook.com/UNNGOF/" target="_blank" class="fb">Facebook</a><a href="https://x.com/ngoforum" target="_blank" class="tw">X</a><a href="https://www.instagram.com/ngoforumug/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/company/uganda-national-ngo-forum/" target="_blank" class="li">LinkedIn</a><a href="https://ngoforum.or.ug/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇮🇳</span><span class="name">VANI</span><span class="country">India</span></div><div class="member-links"><a href="https://www.facebook.com/TeamVANI/" target="_blank" class="fb">Facebook</a><a href="https://x.com/vani_info" target="_blank" class="tw">X</a><a href="https://www.linkedin.com/company/vani-voluntary-action-network-india/" target="_blank" class="li">LinkedIn</a><a href="https://www.vaniindia.org/" target="_blank" class="web">Website</a></div></div>
+      <div class="member-card"><div class="member-header"><span class="flag">🇿🇲</span><span class="name">ZCSD</span><span class="country">Zambia</span></div><div class="member-links"><a href="https://www.facebook.com/ZambiaCouncilForSocialDevelopment/" target="_blank" class="fb">Facebook</a><a href="https://x.com/thezcsd" target="_blank" class="tw">X</a><a href="https://www.instagram.com/the.zcsd/" target="_blank" class="ig">Instagram</a><a href="https://www.linkedin.com/in/zambia-council-for-social-development-597578328/" target="_blank" class="li">LinkedIn</a><a href="https://zcsdev.org.zm/" target="_blank" class="web">Website</a></div></div>
     </div>
   </div>
 </div>
@@ -2098,7 +2264,6 @@ Des Examens nationaux volontaires (ENV) au suivi d'un environnement favorable à
 
 
 <script>
-// Cambiar idioma
 function switchLanguage(lang) {
   document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
   document.getElementById('lang-' + lang).classList.add('active');
@@ -2110,19 +2275,16 @@ function switchLanguage(lang) {
   });
   localStorage.setItem('forus-lang', lang);
   
-  // Traducir navegación
   const navButtons = document.querySelectorAll('#mainNav button');
   navButtons.forEach(btn => {
     const text = btn.getAttribute('data-' + lang);
     if (text) btn.textContent = text;
   });
   
-  // Volver a la página de inicio del idioma seleccionado
   const prefix = lang === 'es' ? '' : '-' + lang;
   switchPage('page-inicio' + prefix);
 }
 
-// Cambiar página/ventana
 function switchPage(pageId) {
   const activeLang = document.querySelector('.lang-content.active');
   if (activeLang) {
@@ -2136,7 +2298,6 @@ function switchPage(pageId) {
   });
 }
 
-// Event listeners para navegación
 document.querySelectorAll('.toolkit-nav button').forEach(btn => {
   btn.addEventListener('click', function() {
     const pageId = this.dataset.page;
@@ -2149,7 +2310,6 @@ document.querySelectorAll('.toolkit-nav button').forEach(btn => {
   });
 });
 
-// Cargar idioma guardado
 document.addEventListener('DOMContentLoaded', function() {
   const savedLang = localStorage.getItem('forus-lang') || 'es';
   switchLanguage(savedLang);
